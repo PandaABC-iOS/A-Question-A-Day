@@ -158,15 +158,15 @@ let o3 = FooObjectClass()
 o2.bar()
 
 /// W-Table
-let o4 = o1 as Pet
+let o4 = o1 as Bar
 o4.bar()
 
 /// W-Table
-let o5 = o2 as Pet
+let o5 = o2 as Bar
 o5.bar()
 
 /// W-Table
-let o6 = o3 as Pet
+let o6 = o3 as Bar
 o6.bar()
 ```
 
