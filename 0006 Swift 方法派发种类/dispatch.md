@@ -1,22 +1,24 @@
+Swift 的方法调用比较复杂，有静态调用，动态调用（1. V-Table 派发，2. Objective-C 方法派发）。
+涉及到协议的时候，又会有另一种基于 Table 的派发，叫做 W-Table。在编译器优化的时候，动态方法可能会变成静态方法来提升效率。
 
-# 说明
-
-SIL 是 Swift 的中间语言
+我们可以通过编译到 SIL 来查看，SIL 是 Swift 的中间语言。
 
 ```swift
 # 用 swiftc 生成 SIL，不开启编译优化
 swiftc -emit-silgen Global.swift -Onone > Global.sil
 ```
 
-[function_ref](https://github.com/apple/swift/blob/master/docs/SIL.rst#function-ref) 的函数引用，根据 SIL，这是静态调用
+Global.sil 中有 [function_ref](https://github.com/apple/swift/blob/master/docs/SIL.rst#function-ref) ，根据 SIL，这是静态调用。
 
+
+# 说明
 V-Table
 
 Virtual Table 是一种动态派发的实现，关于其中的原理介绍，可以看这一篇讲 [C++ Virtual Table](https://www.learncpp.com/cpp-tutorial/125-the-virtual-table/) 的文章。
 
 W-Table
 
-Protocol witness table，是管理 Protocol Type 的方法分派表，每当一个类别遵循某个协议，就会生成一个 witness table。原理参考这篇文章，[重新檢視 Swift 的 Protocol（三）]（https://medium.com/@pofattseng/重新檢視-swift-的-protocol-三-d5e465fe8195）
+Protocol witness table，是管理 Protocol Type 的方法分派表，每当一个类别遵循某个协议，就会生成一个 witness table。
 
 
 Message 是 Objective-C Runtime 的消息派发
@@ -130,7 +132,7 @@ protocol Bar {
 	func bar()
 }
 
-strunc FooStruct: Bar {
+struct FooStruct: Bar {
 	func bar() {}
 }
 
@@ -169,3 +171,6 @@ o6.bar()
 ```
 
 标记为 `@objc` 的协议方法，走 Message 派发。
+
+# 参考
+- [Swift 中的方法调用（Method Dispatch）（一） - 概述] (https://x140yu.github.io/2018-04-08-method-dispatch-in-swift-1/)
