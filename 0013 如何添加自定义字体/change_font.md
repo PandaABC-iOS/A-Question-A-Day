@@ -1,11 +1,13 @@
 # 修改字体
 
 FZLanTYJW_Cu.TTF：
+
 	- 全名：方正兰亭圆简体_粗
 	- name：FZLANTY_CUJW--GB1-0
 	- family：FZLanTingYuanS-B-GB
 
-FZLanTYJW.TTF:
+FZLanTYJW.TTF: 
+
 	- 全名: 方正兰亭圆简体
 	- name：FZLANTY_JW--GB1-0
 	- family：FZLanTingYuanS-R-GB
@@ -69,7 +71,7 @@ FZLanTYJW.TTF:
 ```
 
 如果想自动替换全部 xib 的字体，思路就是扫描所有的 xib 文件，不管是什么字体，如果自重小于等于 `regular`，就替换成 `name="FZLANTY_JW--GB1-0" family="FZLanTingYuanS-R-GB"`，
-大于 `regular`，就替换成 `name="FZLANTY_CUJW--GB1-0" family="FZLanTingYuanS-B-GB" pointSize="17"`
+大于 `regular`，就替换成 `name="FZLANTY_CUJW--GB1-0" family="FZLanTingYuanS-B-GB"`
 
 我这边写了示例代码，对 ACC iPhone 扫描，修改了 100 多个 xib 的字体。目前支持对 UILabel 上指定的苹方字体，修改到对应字重的方正兰亭圆简体。
 
