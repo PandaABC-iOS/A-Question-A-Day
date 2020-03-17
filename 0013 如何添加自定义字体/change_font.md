@@ -1,16 +1,16 @@
 # 修改字体
 
-FZLanTYJW_Cu.TTF：
+FZLanTYJW_Cu.TTF:
 
-	- 全名：方正兰亭圆简体_粗
-	- name：FZLANTY_CUJW--GB1-0
-	- family：FZLanTingYuanS-B-GB
+- 全名：方正兰亭圆简体_粗
+- name：FZLANTY_CUJW--GB1-0
+- family：FZLanTingYuanS-B-GB
 
 FZLanTYJW.TTF: 
 
-	- 全名: 方正兰亭圆简体
-	- name：FZLANTY_JW--GB1-0
-	- family：FZLanTingYuanS-R-GB
+- 全名: 方正兰亭圆简体
+- name：FZLANTY_JW--GB1-0
+- family：FZLanTingYuanS-R-GB
 	
 ## 添加到项目中
 把字体文件拖到项目中，勾选 target。
