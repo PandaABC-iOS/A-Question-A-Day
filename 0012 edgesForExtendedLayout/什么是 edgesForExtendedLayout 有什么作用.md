@@ -26,7 +26,7 @@ edgesForExtendedLayout属性是个枚举值, 默认是`all`
 
 
 
-###automaticallyAdjustsScrollViewInsets
+### automaticallyAdjustsScrollViewInsets
 
 `UINavigationBar与UITabBar`默认都是半透明模糊效果，在这种情况下系统会对视图控制器的UI布局进行优化：当视图控制器里面【第一个】被添加进去的视图是`UIScrollView`或其子类时，系统会自动调整其内边距属性`contentInset`，以保证滑动视图里的内容不被`UINavigationBar`与`UITabBar`遮挡。
 
