@@ -11,7 +11,7 @@
 
 ## 如何更换icon？
 
-1. 准备要更换的icon
+1. 准备要更换的icon （iOS 10.3 以后才支持这个功能哦）
 
    将我们需要更换的图标放到我们的项目目录中（因为放到.xcassets中不管用），图片的命名建议以下面的方式命名，例如：xx20x20@2x.png，xx20x20@3x.png…这样在填写Info.plist时也会省事很多。
 
@@ -150,3 +150,10 @@ UIPrerenderedIcon:是否已经预渲染，如果不设置该项或者设为NO。
 
 ```
 
+附件：
+
+https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/
+
+
+
+https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/TP40009249-SW10
