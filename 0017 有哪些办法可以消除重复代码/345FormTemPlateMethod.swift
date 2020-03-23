@@ -39,23 +39,11 @@ class FormTemPlateMethod {
         }
         
         func statement() -> String {
-            var result = "Rental Record for" + getName() + "\n"
-            for aRental in rentals {
-                result += "\t" + aRental.getMovie().getTitle() + "\t" + aRental.getCharge() + "\n"
-            }
-            result += "Amount owed is" + getTotalCharge() + "\n"
-            result += "You earned" + getTotalFrequentRenterPoints() + " frequent renter points"
-            return result
+            return TextStatement().value(aCustomer: self)
         }
         
         func htmlStatement() -> String {
-            var result = "<H1>Rental for <EM>" + getName() + "</EM></H1><p>\n"
-            for aRental in rentals {
-                result += aRental.getMovie().getTitle() + ": " + aRental.getCharge() + "<BR>\n"
-            }
-            result += "<P>You owe <EM>" + getTotalCharge() + "</EM><P>\n"
-            result += "On this rental you earned <EM>" + getTotalFrequentRenterPoints() + "</EM> frequent renter points<P>"
-            return result
+            return HtmlStatement().value(aCustomer: self)
         }
     }
     
@@ -72,6 +60,35 @@ class FormTemPlateMethod {
     class Movie {
         func getTitle() -> String {
             return ""
+        }
+    }
+    
+    /// 超类
+    class Statement {
+        
+    }
+    
+    class TextStatement: Statement {
+        func value(aCustomer: Customer) -> String {
+            var result = "Rental Record for" + aCustomer.getName() + "\n"
+            for aRental in aCustomer.rentals {
+                result += "\t" + aRental.getMovie().getTitle() + "\t" + aRental.getCharge() + "\n"
+            }
+            result += "Amount owed is" + aCustomer.getTotalCharge() + "\n"
+            result += "You earned" + aCustomer.getTotalFrequentRenterPoints() + " frequent renter points"
+            return result
+        }
+    }
+    
+    class HtmlStatement: Statement {
+        func value(aCustomer: Customer) -> String {
+            var result = "<H1>Rental for <EM>" + aCustomer.getName() + "</EM></H1><p>\n"
+            for aRental in aCustomer.rentals {
+                result += aRental.getMovie().getTitle() + ": " + aRental.getCharge() + "<BR>\n"
+            }
+            result += "<P>You owe <EM>" + aCustomer.getTotalCharge() + "</EM><P>\n"
+            result += "On this rental you earned <EM>" + aCustomer.getTotalFrequentRenterPoints() + "</EM> frequent renter points<P>"
+            return result
         }
     }
 }
