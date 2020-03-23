@@ -25,18 +25,24 @@ import Foundation
  - 9. 编译，测试。
  */
 class ExtractMethod {
+    // 提炼出了printBanner()，这是不带参数的最简单的情况
     class Demo1 {
         
         var orders = [Order]()
         
         var name = ""
         
-        func printOwing() {
-            var outstanding = 0.0
+        func printBanner() {
             // 打印banner
             print("***********************")
             print("**** Customer Owes ****")
             print("***********************")
+        }
+        
+        func printOwing() {
+            var outstanding = 0.0
+
+            printBanner()
             
             for aOrder in orders {
                 outstanding += aOrder.getAmount()
