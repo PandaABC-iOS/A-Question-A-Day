@@ -39,14 +39,12 @@ class ExtractClass {
         
         var name = ""
         
-        var officeNumber = ""
-        
         func getName() -> String {
             return name
         }
         
         func getTelephoneNumber() -> String {
-            return "(" + getOfficeAreaCode() + ")" + officeNumber
+            return officeTelephone.getTelephoneNumber()
         }
         
         func getOfficeAreaCode() -> String {
@@ -58,15 +56,22 @@ class ExtractClass {
         }
         
         func getOfficeNumber() -> String {
-            return officeNumber
+            return officeTelephone.getNumber()
         }
         
         func setOfficeNumber(arg: String) {
-            officeNumber = arg
+            officeTelephone.setNumber(arg: arg)
         }
     }
     
     class TelephoneNumber {
+        
+        func getTelephoneNumber() -> String {
+            return "(" + areaCode + ")" + number
+        }
+        
+        var number = ""
+        
         var areaCode = ""
         
         func getAreaCode() -> String {
@@ -75,6 +80,14 @@ class ExtractClass {
         
         func setAreaCode(arg: String) {
             areaCode = arg
+        }
+        
+        func getNumber() -> String {
+            return number
+        }
+        
+        func setNumber(arg: String) {
+            number = arg
         }
     }
 }
