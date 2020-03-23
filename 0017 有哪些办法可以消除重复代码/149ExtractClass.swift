@@ -34,59 +34,34 @@ class ExtractClass {
     
     class Person {
         
-        private var officeTelephone = TelephoneNumber()
-        
         var name = ""
+        
+        var officeAreaCode = ""
+        
+        var officeNumber = ""
         
         func getName() -> String {
             return name
         }
         
         func getTelephoneNumber() -> String {
-            return officeTelephone.getTelephoneNumber()
+            return "(" + officeAreaCode + ")" + officeNumber
         }
         
         func getOfficeAreaCode() -> String {
-            return officeTelephone.getAreaCode()
+            return officeAreaCode
         }
         
         func setOfficeAreaCode(arg: String) {
-            officeTelephone.setAreaCode(arg: arg)
+            officeAreaCode = arg
         }
         
         func getOfficeNumber() -> String {
-            return officeTelephone.getNumber()
+            return officeNumber
         }
         
         func setOfficeNumber(arg: String) {
-            officeTelephone.setNumber(arg: arg)
-        }
-    }
-    
-    class TelephoneNumber {
-        
-        func getTelephoneNumber() -> String {
-            return "(" + areaCode + ")" + number
-        }
-        
-        var number = ""
-        
-        var areaCode = ""
-        
-        func getAreaCode() -> String {
-            return areaCode
-        }
-        
-        func setAreaCode(arg: String) {
-            areaCode = arg
-        }
-        
-        func getNumber() -> String {
-            return number
-        }
-        
-        func setNumber(arg: String) {
-            number = arg
+            officeNumber = arg
         }
     }
 }
