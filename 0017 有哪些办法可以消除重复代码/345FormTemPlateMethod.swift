@@ -65,53 +65,55 @@ class FormTemPlateMethod {
     
     /// 超类
     class Statement {
-        
-    }
-    
-    class TextStatement: Statement {
-        
-        func headerString(aCustomer: Customer) -> String {
-            return "Rental Record for" + aCustomer.getName() + "\n"
-        }
-        
-        func eachRentalString(aRental: Rental) -> String {
-            return "\t" + aRental.getMovie().getTitle() + "\t" + aRental.getCharge() + "\n"
-        }
-        
-        func footerString(aCustomer: Customer) -> String {
-            return "Amount owed is" + aCustomer.getTotalCharge() + "\n" + "You earned" + aCustomer.getTotalFrequentRenterPoints() + " frequent renter points"
-        }
-        
         func value(aCustomer: Customer) -> String {
             var result = headerString(aCustomer: aCustomer)
             for aRental in aCustomer.rentals {
                 result += eachRentalString(aRental: aRental)
             }
-
+            result += footerString(aCustomer: aCustomer)
             return result
+        }
+        
+        func headerString(aCustomer: Customer) -> String {
+            return ""
+        }
+        
+        func eachRentalString(aRental: Rental) -> String {
+            return ""
+        }
+        
+        func footerString(aCustomer: Customer) -> String {
+            return ""
+        }
+    }
+    
+    class TextStatement: Statement {
+        
+        override func headerString(aCustomer: Customer) -> String {
+            return "Rental Record for" + aCustomer.getName() + "\n"
+        }
+        
+        override func eachRentalString(aRental: Rental) -> String {
+            return "\t" + aRental.getMovie().getTitle() + "\t" + aRental.getCharge() + "\n"
+        }
+        
+        override func footerString(aCustomer: Customer) -> String {
+            return "Amount owed is" + aCustomer.getTotalCharge() + "\n" + "You earned" + aCustomer.getTotalFrequentRenterPoints() + " frequent renter points"
         }
     }
     
     class HtmlStatement: Statement {
         
-        func headerString(aCustomer: Customer) -> String {
+        override func headerString(aCustomer: Customer) -> String {
             return "<H1>Rental for <EM>" + aCustomer.getName() + "</EM></H1><p>\n"
         }
         
-        func eachRentalString(aRental: Rental) -> String {
+        override func eachRentalString(aRental: Rental) -> String {
             return aRental.getMovie().getTitle() + ": " + aRental.getCharge() + "<BR>\n"
         }
         
-        func footerString(aCustomer: Customer) -> String {
+        override func footerString(aCustomer: Customer) -> String {
             return "<P>You owe <EM>" + aCustomer.getTotalCharge() + "</EM><P>\n" + "On this rental you earned <EM>" + aCustomer.getTotalFrequentRenterPoints() + "</EM> frequent renter points<P>"
-        }
-        
-        func value(aCustomer: Customer) -> String {
-            var result = headerString(aCustomer: aCustomer)
-            for aRental in aCustomer.rentals {
-                result += eachRentalString(aRental: aRental)
-            }
-            return result
         }
     }
 }
