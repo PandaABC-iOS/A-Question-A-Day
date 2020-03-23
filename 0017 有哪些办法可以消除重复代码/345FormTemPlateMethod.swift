@@ -39,11 +39,23 @@ class FormTemPlateMethod {
         }
         
         func statement() -> String {
-            return TextStatement().value(aCustomer: self)
+            var result = "Rental Record for" + getName() + "\n"
+            for aRental in rentals {
+                result += "\t" + aRental.getMovie().getTitle() + "\t" + aRental.getCharge() + "\n"
+            }
+            result += "Amount owed is" + getTotalCharge() + "\n"
+            result += "You earned" + getTotalFrequentRenterPoints() + " frequent renter points"
+            return result
         }
         
         func htmlStatement() -> String {
-            return HtmlStatement().value(aCustomer: self)
+            var result = "<H1>Rental for <EM>" + getName() + "</EM></H1><p>\n"
+            for aRental in rentals {
+                result += aRental.getMovie().getTitle() + ": " + aRental.getCharge() + "<BR>\n"
+            }
+            result += "<P>You owe <EM>" + getTotalCharge() + "</EM><P>\n"
+            result += "On this rental you earned <EM>" + getTotalFrequentRenterPoints() + "</EM> frequent renter points<P>"
+            return result
         }
     }
     
@@ -60,60 +72,6 @@ class FormTemPlateMethod {
     class Movie {
         func getTitle() -> String {
             return ""
-        }
-    }
-    
-    /// 超类
-    class Statement {
-        func value(aCustomer: Customer) -> String {
-            var result = headerString(aCustomer: aCustomer)
-            for aRental in aCustomer.rentals {
-                result += eachRentalString(aRental: aRental)
-            }
-            result += footerString(aCustomer: aCustomer)
-            return result
-        }
-        
-        func headerString(aCustomer: Customer) -> String {
-            return ""
-        }
-        
-        func eachRentalString(aRental: Rental) -> String {
-            return ""
-        }
-        
-        func footerString(aCustomer: Customer) -> String {
-            return ""
-        }
-    }
-    
-    class TextStatement: Statement {
-        
-        override func headerString(aCustomer: Customer) -> String {
-            return "Rental Record for" + aCustomer.getName() + "\n"
-        }
-        
-        override func eachRentalString(aRental: Rental) -> String {
-            return "\t" + aRental.getMovie().getTitle() + "\t" + aRental.getCharge() + "\n"
-        }
-        
-        override func footerString(aCustomer: Customer) -> String {
-            return "Amount owed is" + aCustomer.getTotalCharge() + "\n" + "You earned" + aCustomer.getTotalFrequentRenterPoints() + " frequent renter points"
-        }
-    }
-    
-    class HtmlStatement: Statement {
-        
-        override func headerString(aCustomer: Customer) -> String {
-            return "<H1>Rental for <EM>" + aCustomer.getName() + "</EM></H1><p>\n"
-        }
-        
-        override func eachRentalString(aRental: Rental) -> String {
-            return aRental.getMovie().getTitle() + ": " + aRental.getCharge() + "<BR>\n"
-        }
-        
-        override func footerString(aCustomer: Customer) -> String {
-            return "<P>You owe <EM>" + aCustomer.getTotalCharge() + "</EM><P>\n" + "On this rental you earned <EM>" + aCustomer.getTotalFrequentRenterPoints() + "</EM> frequent renter points<P>"
         }
     }
 }
