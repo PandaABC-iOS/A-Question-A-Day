@@ -35,10 +35,7 @@ class PullUpMethod {
         func addBill(date: Date, amount: Double) {
             
         }
-    }
-    
-    class RegularCustomer: Customer {
-
+        
         func chargeFor(start: Date, end: Date) -> Double {
             return 0.0
         }
@@ -49,15 +46,17 @@ class PullUpMethod {
         }
     }
     
+    class RegularCustomer: Customer {
+
+        override func chargeFor(start: Date, end: Date) -> Double {
+            return 0.0
+        }
+    }
+    
     class PreferredCustomer: Customer {
         
-        func chargeFor(start: Date, end: Date) -> Double {
+        override func chargeFor(start: Date, end: Date) -> Double {
             return 10.0
-        }
-        
-        func createBill(date: Date) {
-            let chargeAmount = chargeFor(start: lastBillDate, end: date)
-            addBill(date: date, amount: chargeAmount)
         }
     }
 }
