@@ -25,7 +25,7 @@ import Foundation
  - 9. 编译，测试。
  */
 class ExtractMethod {
-    // 提炼出了printBanner()，这是不带参数的最简单的情况
+    // 提炼出了 printDetails，它的参数outstanding被当作参数传给目标函数。对应方法6
     class Demo1 {
         
         var orders = [Order]()
@@ -39,6 +39,12 @@ class ExtractMethod {
             print("***********************")
         }
         
+        func printDetails(outstanding: Double) {
+            // 打印详情
+            print("name: " + name)
+            print("amount" + "\(outstanding)")
+        }
+        
         func printOwing() {
             var outstanding = 0.0
 
@@ -48,9 +54,7 @@ class ExtractMethod {
                 outstanding += aOrder.getAmount()
             }
             
-            // 打印详情
-            print("name: " + name)
-            print("amount" + "\(outstanding)")
+            printDetails(outstanding: outstanding)
         }
         
         class Order {
