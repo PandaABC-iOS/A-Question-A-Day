@@ -32,11 +32,12 @@ import Foundation
  */
 class ExtractClass {
     
+    // 运用步骤1.2.3.4.5
     class Person {
         
-        var name = ""
+        private var officeTelephone = TelephoneNumber()
         
-        var officeAreaCode = ""
+        var name = ""
         
         var officeNumber = ""
         
@@ -45,15 +46,15 @@ class ExtractClass {
         }
         
         func getTelephoneNumber() -> String {
-            return "(" + officeAreaCode + ")" + officeNumber
+            return "(" + getOfficeAreaCode() + ")" + officeNumber
         }
         
         func getOfficeAreaCode() -> String {
-            return officeAreaCode
+            return officeTelephone.getAreaCode()
         }
         
         func setOfficeAreaCode(arg: String) {
-            officeAreaCode = arg
+            officeTelephone.setAreaCode(arg: arg)
         }
         
         func getOfficeNumber() -> String {
@@ -62,6 +63,18 @@ class ExtractClass {
         
         func setOfficeNumber(arg: String) {
             officeNumber = arg
+        }
+    }
+    
+    class TelephoneNumber {
+        var areaCode = ""
+        
+        func getAreaCode() -> String {
+            return areaCode
+        }
+        
+        func setAreaCode(arg: String) {
+            areaCode = arg
         }
     }
 }
