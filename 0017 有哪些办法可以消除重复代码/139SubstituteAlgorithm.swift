@@ -18,15 +18,10 @@ import Foundation
 
 class SubstituteAlgorithm {
     func foundPerson(people: [String]) -> String {
+        let candidates = ["Don", "John", "Kent"]
         for i in people.indices {
-            if people[i] == "Don" {
-                return "Don"
-            }
-            if people[i] == "John" {
-                return "John"
-            }
-            if people[i] == "Kent" {
-                return "Kent"
+            if candidates.contains(people[i]) {
+                return people[i]
             }
         }
         return ""
