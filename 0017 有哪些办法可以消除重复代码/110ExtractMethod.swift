@@ -72,6 +72,8 @@ class ExtractMethod {
         2.1 如果这个变量在被提炼代码段之后未再使用，你只需要直接在目标函数中修改它就可以了。
         2.2 如果被提炼代码段之后的代码还使用了这个变量，你就需要让目标函数返回该变量改变后的值。
      */
+    
+    // 提取了方法 getoutstanding
     class Demo2 {
         
         var orders = [Order]()
@@ -91,15 +93,18 @@ class ExtractMethod {
             print("amount" + "\(outstanding)")
         }
         
-        func printOwing() {
-            var outstanding = 0.0
-
-            printBanner()
-            
+        // 对应于上述描述2.2
+        func getoutstanding() -> Double {
+            var result = 0.0
             for aOrder in orders {
-                outstanding += aOrder.getAmount()
+                result += aOrder.getAmount()
             }
-            
+            return result
+        }
+        
+        func printOwing() {
+            let outstanding = getoutstanding()
+            printBanner()
             printDetails(outstanding: outstanding)
         }
         
