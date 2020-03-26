@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="1500px"
+   height="1125px"
+   enable-background="new"
+   id="svg3274"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="Digital_Signature_diagram.svg">
+  <metadata
+     id="metadata3523">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3521"
+     showgrid="false"
+     inkscape:zoom="0.51477374"
+     inkscape:cx="898.11691"
+     inkscape:cy="709.05461"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3497" />
+  <defs
+     id="defs3276">
+    <style
+       type="text/css"
+       id="style3278">
+	        text {
+	            letter-spacing: -.02em;
+	        }
+	    </style>
+    <!-- size: 120 x 150 -->
+    <g
+       id="page"
+       style="fill: #E7E7E7; stroke: #000000">
+      <polygon
+         stroke-width="1"
+         points="75,0 75,45 120,45"
+         id="polygon3281" />
+      <polygon
+         stroke-width="2"
+         points="0,0 75,0 75,45 120,45 120,150 0,150"
+         id="polygon3283" />
+      <line
+         id="shortLine"
+         stroke-width="1"
+         x1="15"
+         y1="21.5"
+         x2="60"
+         y2="21.5" />
+      <use
+         xlink:href="#shortLine"
+         transform="translate(0 21.5)"
+         id="use3286" />
+      <line
+         id="longLine"
+         stroke-width="1"
+         x1="15"
+         y1="64.5"
+         x2="105"
+         y2="64.5" />
+      <use
+         xlink:href="#longLine"
+         transform="translate(0 21.5)"
+         id="use3289" />
+      <use
+         xlink:href="#longLine"
+         transform="translate(0 43)"
+         id="use3291" />
+      <use
+         xlink:href="#longLine"
+         transform="translate(0 64.5)"
+         id="use3293" />
+      <use
+         xlink:href="#longLine"
+         transform="translate(0 86)"
+         id="use3295" />
+    </g>
+    <!-- size: 88 x 110 -->
+    <g
+       id="smallPage"
+       style="fill: #E7E7E7; stroke: #000000">
+      <rect
+         stroke-width="2"
+         width="88"
+         height="110"
+         id="rect3298" />
+      <line
+         id="longLine2"
+         stroke-width="1"
+         x1="11"
+         y1="15.5"
+         x2="77"
+         y2="15.5" />
+      <use
+         xlink:href="#longLine2"
+         transform="translate(0 15.5)"
+         id="use3301" />
+      <use
+         xlink:href="#longLine2"
+         transform="translate(0 31)"
+         id="use3303" />
+      <use
+         xlink:href="#longLine2"
+         transform="translate(0 46.5)"
+         id="use3305" />
+      <use
+         xlink:href="#longLine2"
+         transform="translate(0 62)"
+         id="use3307" />
+      <use
+         xlink:href="#longLine2"
+         transform="translate(0 77.5)"
+         id="use3309" />
+    </g>
+    <!-- size: 200 x 50 -->
+    <g
+       id="strip">
+      <rect
+         fill="#E7E7E7"
+         stroke="#000000"
+         stroke-width="2"
+         width="200"
+         height="50"
+         id="rect3312" />
+    </g>
+    <g
+       id="hash">
+      <use
+         xlink:href="#strip"
+         id="use3315" />
+      <text
+         fill="#000000"
+         text-anchor="middle"
+         font-family="DejaVu Sans"
+         font-size="26"
+         style="letter-spacing: -.05em"
+         x="100"
+         y="34"
+         id="text3317">101100110101</text>
+    </g>
+    <!-- size: 28 x 37 -->
+    <g
+       id="lock">
+      <path
+         fill="#FFFFFF"
+         stroke="#000000"
+         stroke-width="5"
+         d="M5,0 l0,-6 a8.5,8.5 0 0,1 17,0 l0,6"
+         transform="translate(0 15)"
+         id="path3320" />
+      <rect
+         fill="#000000"
+         y="15"
+         width="28"
+         height="22"
+         id="rect3322" />
+    </g>
+    <g
+       id="signature">
+      <use
+         xlink:href="#strip"
+         id="use3325" />
+      <use
+         xlink:href="#lock"
+         x="-14"
+         y="7"
+         id="use3327" />
+      <text
+         fill="#000000"
+         text-anchor="middle"
+         font-family="DejaVu Sans"
+         font-size="25"
+         style="letter-spacing: -.05em"
+         x="104"
+         y="34"
+         id="text3329">111101101110</text>
+    </g>
+    <!-- size: 60 x 222.5 -->
+    <g
+       id="ribbon">
+      <polygon
+         fill="#FFFFFF"
+         stroke="#000000"
+         stroke-width="3.33"
+         transform="scale(0.6 0.6)"
+         points="92.447,136.964 53.47,22.669 14.487,136.964 53.47,109.421 "
+         id="polygon3332" />
+      <polygon
+         fill="#FFFFFF"
+         stroke="#000000"
+         stroke-width="3.33"
+         transform="scale(0.6 0.6)"
+         points="53.468,3.479 59.672,16.464 69.76,6.198 71.411,20.493                  84.284,14.058 81.205,28.114 95.469,26.21 87.992,38.505 102.104,41.333 91.041,50.536 103.467,57.792 90.015,62.905 99.413,73.804                  85.031,74.272 90.38,87.63 76.626,83.401 77.346,97.772 65.71,89.308 61.725,103.134 53.468,91.351 45.21,103.134 41.227,89.308                  29.59,97.772 30.313,83.401 16.556,87.63 21.908,74.269 7.522,73.804 16.92,62.905 3.467,57.792 15.896,50.536 4.834,41.333                  18.944,38.505 11.466,26.21 25.729,28.114 22.651,14.058 35.524,20.493 37.178,6.198 47.265,16.464 "
+         id="polygon3334" />
+    </g>
+    <g
+       id="ribbonPage">
+      <use
+         xlink:href="#page"
+         id="use3337" />
+      <use
+         xlink:href="#ribbon"
+         transform="translate(9 89)"
+         id="use3339" />
+    </g>
+    <g
+       id="smallRibbonPage">
+      <use
+         xlink:href="#smallPage"
+         id="use3342" />
+      <use
+         xlink:href="#ribbon"
+         transform="scale(0.88 0.88) translate(9 63)"
+         id="use3344" />
+    </g>
+    <!-- size: 162 x 124 -->
+    <g
+       id="arrowRight">
+      <path
+         fill="#FFFFFF"
+         stroke="#000000"
+         stroke-width="2"
+         d="M0,27 l100,0 l0,-27 l62,62 l-62,62 l0,-27 l-100,0 z"
+         id="path3347" />
+    </g>
+    <!-- size: 171 x 130 -->
+    <g
+       id="arrowDown">
+      <path
+         fill="#FFFFFF"
+         stroke="#000000"
+         stroke-width="2"
+         d="M32,0 l0,80 l-32,0 l85.5,50 l85.5,-50 l-32,0 l0,-80 z"
+         id="path3350" />
+    </g>
+    <!-- size: 241 x 188 -->
+    <g
+       id="largeArrowDown">
+      <path
+         fill="#FFFFFF"
+         stroke="#000000"
+         stroke-width="2"
+         d="M44,0 l0,115 l-44,0 l120.5,73 l120.5,-73 l-44,0 l0,-115 z"
+         id="path3353" />
+    </g>
+    <!-- size 50 x 20 -->
+    <g
+       id="key"
+       style="fill: none; stroke: #000000; stroke-width: 4.5; stroke-linecap: square">
+      <line
+         x1="0"
+         y1="10"
+         x2="30"
+         y2="10"
+         id="line3356" />
+      <line
+         x1="0"
+         y1="10"
+         x2="0"
+         y2="22"
+         id="line3358" />
+      <line
+         x1="11"
+         y1="10"
+         x2="11"
+         y2="22"
+         id="line3360" />
+      <circle
+         r="10"
+         cx="40"
+         cy="10"
+         id="circle3362"
+         d="M 50,10 C 50,15.522847 45.522847,20 40,20 34.477153,20 30,15.522847 30,10 30,4.4771525 34.477153,0 40,0 45.522847,0 50,4.4771525 50,10 z" />
+    </g>
+    <g
+       id="largeArrowDownKey">
+      <use
+         xlink:href="#largeArrowDown"
+         id="use3365" />
+      <use
+         xlink:href="#key"
+         transform="translate(95 122)"
+         id="use3367" />
+    </g>
+  </defs>
+  <g
+     style="text-anchor: middle"
+     id="g3369">
+    <g
+       transform="translate(68 130)"
+       id="g3371">
+      <g
+         id="g3373">
+        <use
+           xlink:href="#page"
+           id="use3375" />
+        <text
+           font-size="26"
+           x="60"
+           y="188"
+           id="text3377"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">数据</text>
+      </g>
+      <g
+         transform="translate(155 17.5)"
+         id="g3379">
+        <use
+           xlink:href="#arrowRight"
+           id="use3381" />
+        <text
+           font-size="22.5"
+           transform="translate(63,57)"
+           id="text3383"
+           style="font-size:22.5px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">散列</text>
+        <text
+           font-size="22.5"
+           style="font-size:22.5px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           id="text3525"
+           x="62.252747"
+           y="83.0989">函数</text>
+      </g>
+      <g
+         transform="translate(346 54)"
+         id="g3389">
+        <use
+           xlink:href="#hash"
+           id="use3391" />
+        <text
+           font-size="26"
+           x="100"
+           y="88"
+           id="text3393"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">散列值</text>
+      </g>
+      <g
+         transform="translate(325 173)"
+         id="g3395">
+        <use
+           xlink:href="#largeArrowDownKey"
+           id="use3397" />
+        <text
+           font-size="21"
+           id="text3399"
+           style="font-size:21px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           x="122"
+           y="44">用签名者的私钥</text>
+        <text
+           font-size="21"
+           style="font-size:21px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           id="text3527"
+           x="122"
+           y="80">加密散列值</text>
+      </g>
+      <g
+         transform="translate(346 392)"
+         id="g3407">
+        <use
+           xlink:href="#signature"
+           id="use3409" />
+        <text
+           font-size="26"
+           x="100"
+           y="88"
+           id="text3411"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">签名</text>
+      </g>
+      <g
+         transform="translate(157 320)"
+         id="g3413">
+        <use
+           xlink:href="#smallRibbonPage"
+           id="use3415" />
+        <text
+           font-size="26"
+           x="44"
+           y="162"
+           id="text3417"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">认证</text>
+      </g>
+      <g
+         transform="translate(340 485)"
+         id="g3419">
+        <path
+           d="M0,92 C0,0 237,92 237,0"
+           id="path3421"
+           stroke-width="4"
+           stroke="#000000"
+           fill="none" />
+        <path
+           d="M0,92 C0,0 -237,92 -237,0"
+           id="path3423"
+           stroke-dasharray="13.5,7"
+           stroke-width="4"
+           stroke="#000000"
+           fill="none" />
+      </g>
+      <g
+         transform="translate(254 600)"
+         id="g3425">
+        <use
+           xlink:href="#arrowDown"
+           id="use3427" />
+        <text
+           font-size="24"
+           id="text3429"
+           style="font-size:24px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           x="86"
+           y="34">附加到</text>
+        <text
+           font-size="24"
+           style="font-size:24px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           id="text3529"
+           x="86"
+           y="66">数据</text>
+      </g>
+      <g
+         transform="translate(280 755)"
+         id="g3435">
+        <use
+           xlink:href="#ribbonPage"
+           id="use3437" />
+        <text
+           font-size="26"
+           x="60"
+           y="205"
+           id="text3439"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">数字签名的数据</text>
+      </g>
+    </g>
+    <g
+       transform="translate(802 145)"
+       id="g3441">
+      <g
+         transform="translate(240 0)"
+         id="g3443">
+        <use
+           xlink:href="#ribbonPage"
+           id="use3445" />
+        <text
+           font-size="26"
+           x="60"
+           y="205"
+           id="text3447"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">数字签名的数据</text>
+      </g>
+      <g
+         transform="translate(108 208)"
+         id="g3449">
+        <line
+           stroke="#000000"
+           stroke-width="4"
+           x1="50"
+           y1="0"
+           x2="0"
+           y2="50"
+           id="line3451" />
+      </g>
+      <g
+         transform="translate(444 208)"
+         id="g3453">
+        <line
+           stroke="#000000"
+           stroke-width="4"
+           x1="0"
+           y1="0"
+           x2="50"
+           y2="50"
+           id="line3455" />
+      </g>
+      <g
+         transform="translate(38 282)"
+         id="g3457">
+        <use
+           xlink:href="#page"
+           id="use3459" />
+        <text
+           font-size="26"
+           x="60"
+           y="188"
+           id="text3461"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">数据</text>
+      </g>
+      <g
+         transform="scale(0.95 0.95) translate(18 522)"
+         id="g3463">
+        <use
+           xlink:href="#arrowDown"
+           id="use3465" />
+        <text
+           font-size="24"
+           id="text3467"
+           style="font-size:24px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           x="86"
+           y="40">散列</text>
+        <text
+           font-size="24"
+           style="font-size:24px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           id="text3541"
+           x="86"
+           y="67.368423">函数</text>
+      </g>
+      <g
+         transform="translate(0 652)"
+         id="g3473">
+        <use
+           xlink:href="#hash"
+           id="use3475" />
+        <text
+           font-size="26"
+           x="100"
+           y="88"
+           id="text3477"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">散列值</text>
+      </g>
+      <g
+         transform="translate(405 292)"
+         id="g3479">
+        <use
+           xlink:href="#signature"
+           id="use3481" />
+        <text
+           font-size="26"
+           x="100"
+           y="88"
+           id="text3483"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">签名</text>
+      </g>
+      <g
+         transform="translate(385 422)"
+         id="g3485">
+        <use
+           xlink:href="#largeArrowDownKey"
+           id="use3487" />
+        <text
+           font-size="21"
+           id="text3489"
+           style="font-size:21px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           x="122"
+           y="44">用签名者的公钥</text>
+        <text
+           font-size="21"
+           style="font-size:21px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans"
+           id="text3543"
+           x="122"
+           y="82">解密散列值</text>
+      </g>
+      <g
+         transform="translate(405 652)"
+         id="g3497">
+        <use
+           xlink:href="#hash"
+           id="use3499" />
+        <text
+           font-size="26"
+           x="100"
+           y="88"
+           id="text3501"
+           style="font-size:26px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">散列值</text>
+      </g>
+      <g
+         transform="translate(300 664)"
+         id="g3503">
+        <line
+           stroke="#000000"
+           stroke-width="7"
+           x1="-32"
+           y1="0"
+           x2="32"
+           y2="0"
+           id="line3505" />
+        <line
+           stroke="#000000"
+           stroke-width="7"
+           x1="-32"
+           y1="24"
+           x2="32"
+           y2="24"
+           id="line3507" />
+        <text
+           fill="#000000"
+           font-family="DejaVu Sans"
+           font-size="40"
+           y="-20"
+           id="text3509">?</text>
+      </g>
+      <g
+         transform="translate(300 830)"
+         id="g3511">
+        <text
+           font-size="25"
+           id="text3513"
+           style="font-size:25px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">若两者的散列值一致，则此数字签名为有效</text>
+      </g>
+    </g>
+    <line
+       stroke="#000000"
+       stroke-width="1"
+       x1="730"
+       y1="0"
+       x2="730"
+       y2="1125"
+       id="line3515" />
+    <text
+       font-size="50"
+       x="380"
+       y="85"
+       id="text3517"
+       style="font-size:50px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">签名</text>
+    <text
+       font-size="50"
+       x="1095"
+       y="85"
+       id="text3519"
+       style="font-size:50px;letter-spacing:-0.02em;fill:#000000;font-family:DejaVu Sans">验证</text>
+  </g>
+</svg>
