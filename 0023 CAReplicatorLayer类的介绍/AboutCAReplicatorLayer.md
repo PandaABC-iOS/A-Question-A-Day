@@ -3,7 +3,7 @@
 ## 效果
 
 利用 CAReplicatorLayer 类可以实现如下效果
-![](https://upload-images.jianshu.io/upload_images/2208956-52102cfcf6592f6b.gif)
+![](1.gif)
 
 ## 实现方法
 
