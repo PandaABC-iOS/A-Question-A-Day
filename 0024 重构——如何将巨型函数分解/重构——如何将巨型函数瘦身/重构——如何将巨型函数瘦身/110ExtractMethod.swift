@@ -35,6 +35,12 @@ class ExtractMethod {
             print("***********************")
         }
         
+        func printDetails(outstanding: Double) {
+            // 打印详情
+            print("name: " + name)
+            print("amount" + "\(outstanding)")
+        }
+        
         func printOwing() {
             var outstanding = 0.0
 
@@ -44,9 +50,7 @@ class ExtractMethod {
                 outstanding += aOrder.getAmount()
             }
             
-            // 打印详情
-            print("name: " + name)
-            print("amount" + "\(outstanding)")
+            printDetails(outstanding: outstanding)
         }
         
         class Order {
