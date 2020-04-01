@@ -1,3 +1,13 @@
+//
+//  110ExtractMethod.swift
+//  Refactor
+//
+//  Created by 张津铭 on 2020/3/14.
+//  Copyright © 2020 Hangzhou. All rights reserved.
+//
+
+import Foundation
+
 /**
  动机：如果每个函数的粒度都很小，那么函数被复用的机会就更大；其次，这会使高层函数读起来就像一系列注释；再其次，如果函数都是细粒度，那么函数的覆写也会更容易些。
  做法：
@@ -11,7 +21,6 @@
 // 将被提炼代码段中需要读取的局部变量，当作参数传给目标函数。
 // 处理完所有局部变量之后，进行编译。
 // 在源函数中，将被提炼代码段替换为对目标函数的调用。
-
 class ExtractMethod {
     class Demo1 {
         
@@ -19,12 +28,17 @@ class ExtractMethod {
         
         var name = ""
         
-        func printOwing() {
-            var outstanding = 0.0
+        func printBanner() {
             // 打印banner
             print("***********************")
             print("**** Customer Owes ****")
             print("***********************")
+        }
+        
+        func printOwing() {
+            var outstanding = 0.0
+
+            printBanner()
             
             for aOrder in orders {
                 outstanding += aOrder.getAmount()
