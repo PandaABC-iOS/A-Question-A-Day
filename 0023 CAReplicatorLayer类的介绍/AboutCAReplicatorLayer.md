@@ -1,5 +1,9 @@
 # CAReplicatorLayer 类
 
+## 介绍
+
+CAReplicatorLayer可以将自己的子图层复制指定的次数，并且被复制比分会保持被复制图层的各种基础属性以及动画
+
 ## 效果
 
 利用 CAReplicatorLayer 类可以实现如下效果
