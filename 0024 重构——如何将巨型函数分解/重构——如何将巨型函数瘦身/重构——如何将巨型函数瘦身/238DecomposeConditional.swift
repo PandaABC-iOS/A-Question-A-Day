@@ -34,11 +34,23 @@ class DecomposeConditional {
     var charge = 0.0
     
     func aa(date: Date) {
-        if date < summer_start || date > summer_end {
-            charge = quantity * winterRate + winterServiceCharge
+        if notSummer(date: date) {
+            charge = winterCharge(quantity: quantity)
         } else {
-            charge = quantity * summerRate
+            charge = summerCharge(quantity: quantity)
         }
+    }
+    
+    func notSummer(date: Date) -> Bool {
+        return date < summer_start || date > summer_end
+    }
+    
+    func summerCharge(quantity: Double) -> Double {
+        return quantity * summerRate
+    }
+    
+    func winterCharge(quantity: Double) -> Double {
+        return quantity * winterRate + winterServiceCharge
     }
 }
 
