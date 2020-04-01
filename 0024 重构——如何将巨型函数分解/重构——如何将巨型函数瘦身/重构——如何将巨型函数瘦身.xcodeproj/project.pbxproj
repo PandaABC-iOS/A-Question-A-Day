@@ -17,6 +17,7 @@
 		08B95AB224341F2700DACAE8 /* _____________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AB124341F2700DACAE8 /* _____________UITests.swift */; };
 		08B95AC024341F7F00DACAE8 /* 110ExtractMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95ABF24341F7F00DACAE8 /* 110ExtractMethod.swift */; };
 		08B95AC2243420C000DACAE8 /* 120ReplaceTempWithQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AC1243420C000DACAE8 /* 120ReplaceTempWithQuery.swift */; };
+		08B95AC42434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AC32434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		08B95AB324341F2700DACAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08B95ABF24341F7F00DACAE8 /* 110ExtractMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 110ExtractMethod.swift; sourceTree = "<group>"; };
 		08B95AC1243420C000DACAE8 /* 120ReplaceTempWithQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 120ReplaceTempWithQuery.swift; sourceTree = "<group>"; };
+		08B95AC32434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 135ReplaceMethodWithMethodObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				08B95A9324341F2500DACAE8 /* ViewController.swift */,
 				08B95ABF24341F7F00DACAE8 /* 110ExtractMethod.swift */,
 				08B95AC1243420C000DACAE8 /* 120ReplaceTempWithQuery.swift */,
+				08B95AC32434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift */,
 				08B95A9524341F2500DACAE8 /* Main.storyboard */,
 				08B95A9824341F2700DACAE8 /* Assets.xcassets */,
 				08B95A9A24341F2700DACAE8 /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 				08B95AC2243420C000DACAE8 /* 120ReplaceTempWithQuery.swift in Sources */,
 				08B95A9224341F2500DACAE8 /* SceneDelegate.swift in Sources */,
 				08B95AC024341F7F00DACAE8 /* 110ExtractMethod.swift in Sources */,
+				08B95AC42434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
