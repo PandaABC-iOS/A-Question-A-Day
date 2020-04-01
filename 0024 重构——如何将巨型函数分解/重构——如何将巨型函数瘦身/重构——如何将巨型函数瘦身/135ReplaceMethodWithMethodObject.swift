@@ -35,13 +35,40 @@ class ReplaceMethodWithMethodObject {
         }
         
         func gamma(inputVal: Double, quantity: Double, yearToDate: Double) -> Double {
-            let importantValue1 = inputVal * quantity + delta()
-            var importantValue2 = inputVal * yearToDate + 100.0
+            return Gamma(source: self, inputVal: inputVal, quantity: quantity, yearToDate: yearToDate).compute()
+        }
+    }
+    
+    class Gamma {
+        var account = Account()
+        var inputVal: Double
+        var quantity: Double
+        var yearToDate: Double
+        var importantValue1: Double = 0.0
+        var importantValue2: Double = 0.0
+        var importantValue3: Double = 0.0
+        
+        init(source: Account, inputVal: Double, quantity: Double, yearToDate: Double) {
+            self.account = source
+            self.inputVal = inputVal
+            self.quantity = quantity
+            self.yearToDate = yearToDate
+        }
+        
+        func compute() -> Double {
+            importantValue1 = inputVal * quantity + account.delta()
+            importantValue2 = inputVal * yearToDate + 100.0
+
+            importantThing()
+            
+            importantValue3 = importantValue2 * 7.0
+            return importantValue3 - 2.0 * importantValue2
+        }
+        
+        func importantThing() {
             if yearToDate - importantValue1 > 100.0 {
                 importantValue2 -= 20.0
             }
-            let importantValue3 = importantValue2 * 7.0
-            return importantValue3 - 2.0 * importantValue2
         }
     }
 }
