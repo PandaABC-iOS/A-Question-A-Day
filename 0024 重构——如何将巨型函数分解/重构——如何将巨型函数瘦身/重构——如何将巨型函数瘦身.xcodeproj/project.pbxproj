@@ -20,6 +20,7 @@
 		08B95AC42434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AC32434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift */; };
 		08B95AC62434216A00DACAE8 /* 238DecomposeConditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AC52434216A00DACAE8 /* 238DecomposeConditional.swift */; };
 		08B95AC82434222100DACAE8 /* 288PreserveWholeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AC72434222100DACAE8 /* 288PreserveWholeObject.swift */; };
+		08B95ACA2434227000DACAE8 /* 295IntroduceParameterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AC92434227000DACAE8 /* 295IntroduceParameterObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		08B95AC32434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 135ReplaceMethodWithMethodObject.swift; sourceTree = "<group>"; };
 		08B95AC52434216A00DACAE8 /* 238DecomposeConditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 238DecomposeConditional.swift; sourceTree = "<group>"; };
 		08B95AC72434222100DACAE8 /* 288PreserveWholeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 288PreserveWholeObject.swift; sourceTree = "<group>"; };
+		08B95AC92434227000DACAE8 /* 295IntroduceParameterObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 295IntroduceParameterObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				08B95AC32434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift */,
 				08B95AC52434216A00DACAE8 /* 238DecomposeConditional.swift */,
 				08B95AC72434222100DACAE8 /* 288PreserveWholeObject.swift */,
+				08B95AC92434227000DACAE8 /* 295IntroduceParameterObject.swift */,
 				08B95A9524341F2500DACAE8 /* Main.storyboard */,
 				08B95A9824341F2700DACAE8 /* Assets.xcassets */,
 				08B95A9A24341F2700DACAE8 /* LaunchScreen.storyboard */,
@@ -279,6 +282,7 @@
 				08B95AC2243420C000DACAE8 /* 120ReplaceTempWithQuery.swift in Sources */,
 				08B95AC82434222100DACAE8 /* 288PreserveWholeObject.swift in Sources */,
 				08B95A9224341F2500DACAE8 /* SceneDelegate.swift in Sources */,
+				08B95ACA2434227000DACAE8 /* 295IntroduceParameterObject.swift in Sources */,
 				08B95AC62434216A00DACAE8 /* 238DecomposeConditional.swift in Sources */,
 				08B95AC024341F7F00DACAE8 /* 110ExtractMethod.swift in Sources */,
 				08B95AC42434211F00DACAE8 /* 135ReplaceMethodWithMethodObject.swift in Sources */,
