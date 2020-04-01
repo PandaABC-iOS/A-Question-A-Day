@@ -36,35 +36,18 @@ class ReplaceTempWithQuery {
     var itemPrice = 0.0
 
     func getPrice() -> Double {
-        let basePrice = quantity * itemPrice
-        var discountFactor: Double
-        if basePrice > 1000 {
-            discountFactor = 0.95
-        } else {
-            discountFactor = 0.98
-        }
-        return basePrice * discountFactor
+        return basePrice() * discountFactor()
     }
-
+    
+    func basePrice() -> Double {
+        return quantity * itemPrice
+    }
+    
+    func discountFactor() -> Double {
+        if basePrice() > 1000 {
+            return 0.95
+        } else {
+            return 0.98
+        }
+    }
 }
-
-//var quantity = 0.0
-//
-//var itemPrice = 0.0
-//
-//func getPrice() -> Double {
-//    return basePrice() * discountFactor()
-//}
-//
-//func basePrice() -> Double {
-//    return quantity * itemPrice
-//}
-//
-//func discountFactor() -> Double {
-//    if basePrice() > 1000 {
-//        return 0.95
-//    } else {
-//        return 0.98
-//    }
-//}
-
