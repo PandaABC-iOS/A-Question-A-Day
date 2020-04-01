@@ -16,6 +16,7 @@
 		08B95AA724341F2700DACAE8 /* _____________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AA624341F2700DACAE8 /* _____________Tests.swift */; };
 		08B95AB224341F2700DACAE8 /* _____________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AB124341F2700DACAE8 /* _____________UITests.swift */; };
 		08B95AC024341F7F00DACAE8 /* 110ExtractMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95ABF24341F7F00DACAE8 /* 110ExtractMethod.swift */; };
+		08B95AC2243420C000DACAE8 /* 120ReplaceTempWithQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B95AC1243420C000DACAE8 /* 120ReplaceTempWithQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		08B95AB124341F2700DACAE8 /* _____________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_____________UITests.swift"; sourceTree = "<group>"; };
 		08B95AB324341F2700DACAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08B95ABF24341F7F00DACAE8 /* 110ExtractMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 110ExtractMethod.swift; sourceTree = "<group>"; };
+		08B95AC1243420C000DACAE8 /* 120ReplaceTempWithQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 120ReplaceTempWithQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				08B95A9124341F2500DACAE8 /* SceneDelegate.swift */,
 				08B95A9324341F2500DACAE8 /* ViewController.swift */,
 				08B95ABF24341F7F00DACAE8 /* 110ExtractMethod.swift */,
+				08B95AC1243420C000DACAE8 /* 120ReplaceTempWithQuery.swift */,
 				08B95A9524341F2500DACAE8 /* Main.storyboard */,
 				08B95A9824341F2700DACAE8 /* Assets.xcassets */,
 				08B95A9A24341F2700DACAE8 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				08B95A9424341F2500DACAE8 /* ViewController.swift in Sources */,
 				08B95A9024341F2500DACAE8 /* AppDelegate.swift in Sources */,
+				08B95AC2243420C000DACAE8 /* 120ReplaceTempWithQuery.swift in Sources */,
 				08B95A9224341F2500DACAE8 /* SceneDelegate.swift in Sources */,
 				08B95AC024341F7F00DACAE8 /* 110ExtractMethod.swift in Sources */,
 			);
