@@ -59,5 +59,51 @@ class ExtractMethod {
             }
         }
     }
+    
+    /**
+     这里只讨论临时变量的问题。如果你发现源函数的参数被赋值，应该马上使用Remove Assignments to Parameters（131）
+     1. 这个变量只在被提炼代码段中使用。
+        => 将这个临时变量的声明移到被提炼代码段中。然后一起提炼出去。
+     2. 被提炼代码段之外的代码也使用了这个变量。
+        2.1 如果这个变量在被提炼代码段之后未再使用，你只需要直接在目标函数中修改它就可以了。
+        2.2 如果被提炼代码段之后的代码还使用了这个变量，你就需要让目标函数返回该变量改变后的值。
+     */
+    class Demo2 {
+        
+        var orders = [Order]()
+        
+        var name = ""
+        
+        func printBanner() {
+            // 打印banner
+            print("***********************")
+            print("**** Customer Owes ****")
+            print("***********************")
+        }
+        
+        func printDetails(outstanding: Double) {
+            // 打印详情
+            print("name: " + name)
+            print("amount" + "\(outstanding)")
+        }
+        
+        func printOwing() {
+            var outstanding = 0.0
+
+            printBanner()
+            
+            for aOrder in orders {
+                outstanding += aOrder.getAmount()
+            }
+            
+            printDetails(outstanding: outstanding)
+        }
+        
+        class Order {
+            func getAmount() -> Double {
+                return 0.0
+            }
+        }
+    }
 }
 
