@@ -29,15 +29,19 @@ Swift语言中类定义的方法可以分为三种：OC类的派生类并且重�
 由于 extension 中定义的方法(重写OC基类的方法除外)是通过直接调用硬编码的函数地址完成调用的，无法实现多态，所以这类方法不能重写。
 
 override normal func of swift is not allowed in extension
+
 ![](./override normal func of swift is not allowed in extension.png)
 
 override func of swift that is defined in extension is not allowed
+
 ![](./override normal func of swift in extension is not allowed.png)
 
 override func marked as objc dynamic is allowed
+
 ![](./override func marked as objc dynamic is allowed.png)
 
 override func in swift
+
 ![](./override func in swift.png)
 
 ## 延伸
