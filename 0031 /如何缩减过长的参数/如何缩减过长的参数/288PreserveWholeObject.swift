@@ -34,16 +34,14 @@ class PreserveWholeObject {
         }
         
         func withinPlan(plan: HeatingPlan) -> Bool {
-            let low = daysTempRange().getLow()
-            let high = daysTempRange().getHigh()
-            return plan.withinRange(low: low, high: high)
+            return plan.withinRange(roomRange: daysTempRange())
         }
     }
     
     class HeatingPlan {
         
-        func withinRange(low: Int, high: Int) -> Bool {
-            return low >= range.getLow() && high <= range.getHigh()
+        func withinRange(roomRange: TempRange) -> Bool {
+            return roomRange.includes(arg: roomRange)
         }
         
         private var range = TempRange()
@@ -57,42 +55,10 @@ class PreserveWholeObject {
         func getHigh() -> Int {
             return 1
         }
+        
+        func includes(arg: TempRange) -> Bool {
+            return arg.getLow() >= getLow() && arg.getHigh() <= getHigh()
+        }
     }
 }
-//
-//    class Room {
-//
-//        func daysTempRange() -> TempRange {
-//            return TempRange()
-//        }
-//
-//        func withinPlan(plan: HeatingPlan) -> Bool {
-//            return plan.withinRange(daysTempRange())
-//        }
-//    }
-//
-//    class HeatingPlan {
-//
-//        private var _range: TempRange = TempRange()
-//
-//        func withinRange(_ roomRange: TempRange) -> Bool {
-//            return _range.includes(arg: roomRange)
-////            return roomRange.getLow() >= _range.getLow() && roomRange.getHigh() <= _range.getHigh()
-//        }
-//    }
-//
-//    class TempRange {
-//        func getLow() -> Int {
-//            return 0
-//        }
-//
-//        func getHigh() -> Int {
-//            return 1
-//        }
-//
-//        func includes(arg: TempRange) -> Bool {
-//            return arg.getLow() >= getLow() && arg.getHigh() <= getHigh()
-//        }
-//    }
-
 
