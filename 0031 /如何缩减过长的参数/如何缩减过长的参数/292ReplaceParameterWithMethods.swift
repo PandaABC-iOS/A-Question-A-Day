@@ -22,29 +22,28 @@ import Foundation
  */
 class ReplaceParameterWithMethods {
 
-    private var _quantity = 0
+    private var _quantity = 0.0
 
-    private var _itemPrice = 0
+    private var _itemPrice = 0.0
 
     func getPrice() -> Double {
-        let basePrice = _quantity * _itemPrice
-        let discountLevel: Int
-        
-        if _quantity > 100 {
-            discountLevel = 2
+        if getDiscountLevel() == 2 {
+            return getBasePrice() * 0.1
         } else {
-            discountLevel = 1
+            return getBasePrice() * 0.05
         }
-        
-        let finalPrice = discountedPrice(basePrice: basePrice, discountLevel: discountLevel)
-        return finalPrice
     }
     
-    func discountedPrice(basePrice: Int, discountLevel: Int) -> Double {
-        if discountLevel == 2 {
-            return Double(basePrice) * 0.1
+    func getDiscountLevel() -> Int {
+        if _quantity > 100 {
+            return 2
         } else {
-            return Double(basePrice) * 0.05
+            return 1
         }
     }
+    
+    func getBasePrice() -> Double {
+        return _quantity * _itemPrice
+    }
 }
+
