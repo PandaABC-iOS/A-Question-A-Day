@@ -30,7 +30,7 @@ Swift语言中类定义的方法可以分为三种：OC类的派生类并且重�
 
 override normal func of swift is not allowed in extension
 
-![](./override normal func of swift is not allowed in extension.png)
+![](https://tva1.sinaimg.cn/large/007S8ZIlly1gdtk763138j31q20j8428.jpg)
 
 override func of swift that is defined in extension is not allowed
 
