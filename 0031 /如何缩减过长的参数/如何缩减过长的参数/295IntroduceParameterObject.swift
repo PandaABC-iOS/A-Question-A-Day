@@ -27,6 +27,8 @@ import Foundation
 
 class IntroduceParameterObject {
     class Entry {
+
+        let flow = Account().getFlowBetween(range: DateRange(start: Date(), end: Date()))
         
         let value: Double
         
@@ -50,14 +52,34 @@ class IntroduceParameterObject {
 
         private var entries = [Entry]()
 
-        func getFlowBetween(start: Date, end: Date) -> Double {
+        func getFlowBetween(range: DateRange!) -> Double {
             var result = 0.0
             for aEntry in entries {
-                if aEntry.getDate() == start || aEntry.getDate() == end || aEntry.getDate() > start && aEntry.getDate() < end {
+                if aEntry.getDate() == range.getStart() || aEntry.getDate() == range.getEnd() || aEntry.getDate() > range.getStart() && aEntry.getDate() < range.getEnd() {
                     result += aEntry.getValue()
                 }
             }
             return result
+        }
+    }
+    
+    class DateRange {
+        
+        let start: Date
+        
+        let end: Date
+        
+        init(start: Date, end: Date) {
+            self.start = start
+            self.end = end
+        }
+        
+        func getStart() -> Date {
+            return start
+        }
+        
+        func getEnd() -> Date {
+            return end
         }
     }
 }
