@@ -52,10 +52,10 @@ class IntroduceParameterObject {
 
         private var entries = [Entry]()
 
-        func getFlowBetween(range: DateRange!) -> Double {
+        func getFlowBetween(range: DateRange) -> Double {
             var result = 0.0
             for aEntry in entries {
-                if aEntry.getDate() == range.getStart() || aEntry.getDate() == range.getEnd() || aEntry.getDate() > range.getStart() && aEntry.getDate() < range.getEnd() {
+                if range.includes(arg: aEntry.getDate()) {
                     result += aEntry.getValue()
                 }
             }
@@ -80,6 +80,10 @@ class IntroduceParameterObject {
         
         func getEnd() -> Date {
             return end
+        }
+        
+        func includes(arg: Date) -> Bool {
+            return arg == start || arg == end || (arg > start && arg < end)
         }
     }
 }
