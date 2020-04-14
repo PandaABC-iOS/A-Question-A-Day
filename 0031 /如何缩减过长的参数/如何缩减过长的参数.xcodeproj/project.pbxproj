@@ -17,6 +17,7 @@
 		08A36257244548F8002A459D /* _________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A36256244548F8002A459D /* _________UITests.swift */; };
 		08A362652445497E002A459D /* 288PreserveWholeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A362642445497E002A459D /* 288PreserveWholeObject.swift */; };
 		08A3626724454A7C002A459D /* 292ReplaceParameterWithMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3626624454A7C002A459D /* 292ReplaceParameterWithMethods.swift */; };
+		08A3626924454AFF002A459D /* 295IntroduceParameterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3626824454AFF002A459D /* 295IntroduceParameterObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		08A36258244548F8002A459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08A362642445497E002A459D /* 288PreserveWholeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 288PreserveWholeObject.swift; sourceTree = "<group>"; };
 		08A3626624454A7C002A459D /* 292ReplaceParameterWithMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 292ReplaceParameterWithMethods.swift; sourceTree = "<group>"; };
+		08A3626824454AFF002A459D /* 295IntroduceParameterObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 295IntroduceParameterObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				08A36238244548F7002A459D /* ViewController.swift */,
 				08A362642445497E002A459D /* 288PreserveWholeObject.swift */,
 				08A3626624454A7C002A459D /* 292ReplaceParameterWithMethods.swift */,
+				08A3626824454AFF002A459D /* 295IntroduceParameterObject.swift */,
 				08A3623A244548F7002A459D /* Main.storyboard */,
 				08A3623D244548F8002A459D /* Assets.xcassets */,
 				08A3623F244548F8002A459D /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 				08A36237244548F7002A459D /* SceneDelegate.swift in Sources */,
 				08A362652445497E002A459D /* 288PreserveWholeObject.swift in Sources */,
 				08A3626724454A7C002A459D /* 292ReplaceParameterWithMethods.swift in Sources */,
+				08A3626924454AFF002A459D /* 295IntroduceParameterObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
