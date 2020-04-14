@@ -18,7 +18,7 @@ git diff old-commit-id new-commit-id
 git diff —name-only old-commit-id new-commit-id
 ```
 
-如果只想要查看某个路径下的文件变动
+如果只想要查看包含某个路径的文件变动
 
 ```
 git diff --name-only old-commit-id new-commit-id | grep iPadN
