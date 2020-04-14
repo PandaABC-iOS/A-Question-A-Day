@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A36235244548F7002A459D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A36234244548F7002A459D /* AppDelegate.swift */; };
+		08A36237244548F7002A459D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A36236244548F7002A459D /* SceneDelegate.swift */; };
+		08A36239244548F7002A459D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A36238244548F7002A459D /* ViewController.swift */; };
+		08A3623C244548F7002A459D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A3623A244548F7002A459D /* Main.storyboard */; };
+		08A3623E244548F8002A459D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A3623D244548F8002A459D /* Assets.xcassets */; };
+		08A36241244548F8002A459D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A3623F244548F8002A459D /* LaunchScreen.storyboard */; };
+		08A3624C244548F8002A459D /* _________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3624B244548F8002A459D /* _________Tests.swift */; };
+		08A36257244548F8002A459D /* _________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A36256244548F8002A459D /* _________UITests.swift */; };
+		08A362652445497E002A459D /* 288PreserveWholeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A362642445497E002A459D /* 288PreserveWholeObject.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08A36248244548F8002A459D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08A36229244548F7002A459D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A36230244548F7002A459D;
+			remoteInfo = "如何缩减过长的参数";
+		};
+		08A36253244548F8002A459D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08A36229244548F7002A459D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A36230244548F7002A459D;
+			remoteInfo = "如何缩减过长的参数";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08A36231244548F7002A459D /* 如何缩减过长的参数.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "如何缩减过长的参数.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A36234244548F7002A459D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08A36236244548F7002A459D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08A36238244548F7002A459D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08A3623B244548F7002A459D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08A3623D244548F8002A459D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08A36240244548F8002A459D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08A36242244548F8002A459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A36247244548F8002A459D /* 如何缩减过长的参数Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "如何缩减过长的参数Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A3624B244548F8002A459D /* _________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_________Tests.swift"; sourceTree = "<group>"; };
+		08A3624D244548F8002A459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A36252244548F8002A459D /* 如何缩减过长的参数UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "如何缩减过长的参数UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A36256244548F8002A459D /* _________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_________UITests.swift"; sourceTree = "<group>"; };
+		08A36258244548F8002A459D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A362642445497E002A459D /* 288PreserveWholeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 288PreserveWholeObject.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08A3622E244548F7002A459D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A36244244548F8002A459D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A3624F244548F8002A459D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08A36228244548F7002A459D = {
+			isa = PBXGroup;
+			children = (
+				08A36233244548F7002A459D /* 如何缩减过长的参数 */,
+				08A3624A244548F8002A459D /* 如何缩减过长的参数Tests */,
+				08A36255244548F8002A459D /* 如何缩减过长的参数UITests */,
+				08A36232244548F7002A459D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08A36232244548F7002A459D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08A36231244548F7002A459D /* 如何缩减过长的参数.app */,
+				08A36247244548F8002A459D /* 如何缩减过长的参数Tests.xctest */,
+				08A36252244548F8002A459D /* 如何缩减过长的参数UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08A36233244548F7002A459D /* 如何缩减过长的参数 */ = {
+			isa = PBXGroup;
+			children = (
+				08A36234244548F7002A459D /* AppDelegate.swift */,
+				08A36236244548F7002A459D /* SceneDelegate.swift */,
+				08A36238244548F7002A459D /* ViewController.swift */,
+				08A362642445497E002A459D /* 288PreserveWholeObject.swift */,
+				08A3623A244548F7002A459D /* Main.storyboard */,
+				08A3623D244548F8002A459D /* Assets.xcassets */,
+				08A3623F244548F8002A459D /* LaunchScreen.storyboard */,
+				08A36242244548F8002A459D /* Info.plist */,
+			);
+			path = "如何缩减过长的参数";
+			sourceTree = "<group>";
+		};
+		08A3624A244548F8002A459D /* 如何缩减过长的参数Tests */ = {
+			isa = PBXGroup;
+			children = (
+				08A3624B244548F8002A459D /* _________Tests.swift */,
+				08A3624D244548F8002A459D /* Info.plist */,
+			);
+			path = "如何缩减过长的参数Tests";
+			sourceTree = "<group>";
+		};
+		08A36255244548F8002A459D /* 如何缩减过长的参数UITests */ = {
+			isa = PBXGroup;
+			children = (
+				08A36256244548F8002A459D /* _________UITests.swift */,
+				08A36258244548F8002A459D /* Info.plist */,
+			);
+			path = "如何缩减过长的参数UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08A36230244548F7002A459D /* 如何缩减过长的参数 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A3625B244548F8002A459D /* Build configuration list for PBXNativeTarget "如何缩减过长的参数" */;
+			buildPhases = (
+				08A3622D244548F7002A459D /* Sources */,
+				08A3622E244548F7002A459D /* Frameworks */,
+				08A3622F244548F7002A459D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "如何缩减过长的参数";
+			productName = "如何缩减过长的参数";
+			productReference = 08A36231244548F7002A459D /* 如何缩减过长的参数.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08A36246244548F8002A459D /* 如何缩减过长的参数Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A3625E244548F8002A459D /* Build configuration list for PBXNativeTarget "如何缩减过长的参数Tests" */;
+			buildPhases = (
+				08A36243244548F8002A459D /* Sources */,
+				08A36244244548F8002A459D /* Frameworks */,
+				08A36245244548F8002A459D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08A36249244548F8002A459D /* PBXTargetDependency */,
+			);
+			name = "如何缩减过长的参数Tests";
+			productName = "如何缩减过长的参数Tests";
+			productReference = 08A36247244548F8002A459D /* 如何缩减过长的参数Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08A36251244548F8002A459D /* 如何缩减过长的参数UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A36261244548F8002A459D /* Build configuration list for PBXNativeTarget "如何缩减过长的参数UITests" */;
+			buildPhases = (
+				08A3624E244548F8002A459D /* Sources */,
+				08A3624F244548F8002A459D /* Frameworks */,
+				08A36250244548F8002A459D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08A36254244548F8002A459D /* PBXTargetDependency */,
+			);
+			name = "如何缩减过长的参数UITests";
+			productName = "如何缩减过长的参数UITests";
+			productReference = 08A36252244548F8002A459D /* 如何缩减过长的参数UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08A36229244548F7002A459D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = iOS;
+				TargetAttributes = {
+					08A36230244548F7002A459D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					08A36246244548F8002A459D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 08A36230244548F7002A459D;
+					};
+					08A36251244548F8002A459D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 08A36230244548F7002A459D;
+					};
+				};
+			};
+			buildConfigurationList = 08A3622C244548F7002A459D /* Build configuration list for PBXProject "如何缩减过长的参数" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08A36228244548F7002A459D;
+			productRefGroup = 08A36232244548F7002A459D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08A36230244548F7002A459D /* 如何缩减过长的参数 */,
+				08A36246244548F8002A459D /* 如何缩减过长的参数Tests */,
+				08A36251244548F8002A459D /* 如何缩减过长的参数UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08A3622F244548F7002A459D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A36241244548F8002A459D /* LaunchScreen.storyboard in Resources */,
+				08A3623E244548F8002A459D /* Assets.xcassets in Resources */,
+				08A3623C244548F7002A459D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A36245244548F8002A459D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A36250244548F8002A459D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08A3622D244548F7002A459D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A36239244548F7002A459D /* ViewController.swift in Sources */,
+				08A36235244548F7002A459D /* AppDelegate.swift in Sources */,
+				08A36237244548F7002A459D /* SceneDelegate.swift in Sources */,
+				08A362652445497E002A459D /* 288PreserveWholeObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A36243244548F8002A459D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A3624C244548F8002A459D /* _________Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A3624E244548F8002A459D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A36257244548F8002A459D /* _________UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08A36249244548F8002A459D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08A36230244548F7002A459D /* 如何缩减过长的参数 */;
+			targetProxy = 08A36248244548F8002A459D /* PBXContainerItemProxy */;
+		};
+		08A36254244548F8002A459D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08A36230244548F7002A459D /* 如何缩减过长的参数 */;
+			targetProxy = 08A36253244548F8002A459D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08A3623A244548F7002A459D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A3623B244548F7002A459D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08A3623F244548F8002A459D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A36240244548F8002A459D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08A36259244548F8002A459D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08A3625A244548F8002A459D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08A3625C244548F8002A459D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC97J6493C;
+				INFOPLIST_FILE = "如何缩减过长的参数/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jinming.zhang.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08A3625D244548F8002A459D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC97J6493C;
+				INFOPLIST_FILE = "如何缩减过长的参数/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jinming.zhang.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08A3625F244548F8002A459D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC97J6493C;
+				INFOPLIST_FILE = "如何缩减过长的参数Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jinming.zhang.---------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/如何缩减过长的参数.app/如何缩减过长的参数";
+			};
+			name = Debug;
+		};
+		08A36260244548F8002A459D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC97J6493C;
+				INFOPLIST_FILE = "如何缩减过长的参数Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jinming.zhang.---------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/如何缩减过长的参数.app/如何缩减过长的参数";
+			};
+			name = Release;
+		};
+		08A36262244548F8002A459D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC97J6493C;
+				INFOPLIST_FILE = "如何缩减过长的参数UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jinming.zhang.---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "如何缩减过长的参数";
+			};
+			name = Debug;
+		};
+		08A36263244548F8002A459D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KC97J6493C;
+				INFOPLIST_FILE = "如何缩减过长的参数UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jinming.zhang.---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "如何缩减过长的参数";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08A3622C244548F7002A459D /* Build configuration list for PBXProject "如何缩减过长的参数" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A36259244548F8002A459D /* Debug */,
+				08A3625A244548F8002A459D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A3625B244548F8002A459D /* Build configuration list for PBXNativeTarget "如何缩减过长的参数" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A3625C244548F8002A459D /* Debug */,
+				08A3625D244548F8002A459D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A3625E244548F8002A459D /* Build configuration list for PBXNativeTarget "如何缩减过长的参数Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A3625F244548F8002A459D /* Debug */,
+				08A36260244548F8002A459D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A36261244548F8002A459D /* Build configuration list for PBXNativeTarget "如何缩减过长的参数UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A36262244548F8002A459D /* Debug */,
+				08A36263244548F8002A459D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08A36229244548F7002A459D /* Project object */;
+}
