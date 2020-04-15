@@ -30,19 +30,19 @@ Swift语言中类定义的方法可以分为三种：OC类的派生类并且重�
 
 override normal func of swift is not allowed in extension
 
-![1](./override normal func of swift is not allowed in extension.png)
+![1](https://tva1.sinaimg.cn/large/007S8ZIlly1gdulyas4zoj31q20j8428.jpg)
 
 override func of swift that is defined in extension is not allowed
 
-![2](./override normal func of swift in extension is not allowed.png)
+![2](https://tva1.sinaimg.cn/large/007S8ZIlly1gdulyeddtcj31pm0hggog.jpg)
 
 override func marked as objc dynamic is allowed
 
-![3](./override func marked as objc dynamic is allowed.png)
+![3](https://tva1.sinaimg.cn/large/007S8ZIlly1gdulyimrpyj31pi0hw0vh.jpg)
 
 override func in swift
 
-![4](./override func in swift.png)
+![4](https://tva1.sinaimg.cn/large/007S8ZIlly1gdulymvjqbj31nc0ew0vi.jpg)
 
 ## 延伸
 
@@ -50,7 +50,7 @@ override func in swift
 
 泛型类的 extension 中不能包含 @objc 的方法
 
-![5](./Extensions of generic classes cannot contain '@objc' members.png)
+![5](https://tva1.sinaimg.cn/large/007S8ZIlly1gdulysy7mej31qi0h4n23.jpg)
 
 ```swift
 //// ✅ 泛型类遵循 @objc 协议不能写在 extension 中
