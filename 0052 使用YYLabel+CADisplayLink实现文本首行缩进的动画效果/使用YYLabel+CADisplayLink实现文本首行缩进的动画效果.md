@@ -28,7 +28,7 @@ self.titleLabel.attributedText = attStr;
 
 ![红色框就是exclusionPaths设置的区域](https://tva1.sinaimg.cn/large/007S8ZIlly1geyxxmfm24j30go0b0abd.jpg)
 
- 对于首行缩进，只要创建一个原点为(0, 0)，宽度为已关注图标的最大x值+间距，高度不超过行高（宽高都不能为0，必须大于0，否则无效果）的`UIBezierPath``exclusionPaths`
+ 对于首行缩进，只要创建一个原点为(0, 0)，宽度为已关注图标的最大x值+间距，高度不超过行高（宽高都不能为0，必须大于0，否则无效果）的`exclusionPaths`
 
 ```objc
 // 刷新方法
