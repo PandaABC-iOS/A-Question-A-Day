@@ -2,7 +2,7 @@
 
 今天要讲的效果如下：
 
-![](https://user-gold-cdn.xitu.io/2020/5/11/172033bcc6599f14?imageslim)
+![](https://tva1.sinaimg.cn/large/007S8ZIlly1geyxx74k7yg30ci09z7wp.gif)
 
 可以看到，当按钮出现的时候，文本会自动以动画的形式后移
 
@@ -26,7 +26,7 @@ self.titleLabel.attributedText = attStr;
 
 **`exclusionPaths`是`YYText`的用于设置文本空白区域的数组，可以存放多个`UIBezierPath`类型的元素，即规定的空白区域。** 
 
-![红色框就是exclusionPaths设置的区域](https://user-gold-cdn.xitu.io/2020/5/11/172033bcc95d48be)
+![红色框就是exclusionPaths设置的区域](https://tva1.sinaimg.cn/large/007S8ZIlly1geyxxmfm24j30go0b0abd.jpg)
 
  对于首行缩进，只要创建一个原点为(0, 0)，宽度为已关注图标的最大x值+间距，高度不超过行高（宽高都不能为0，必须大于0，否则无效果）的`UIBezierPath``exclusionPaths`
 
