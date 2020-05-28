@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "72EAA2F8-D83A-4EFA-A357-DD8F0119A1EA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2320A8E2-CBC1-4E0A-AE08-AB06B8E51B20"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "signDemoTests/signDemoTests.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "-_displayCharset:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC73A9C0-720C-449D-BC4A-C9F83DA03C7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "signDemoTests/signDemoTests.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-testJavaEncoding"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FC73A9C0-720C-449D-BC4A-C9F83DA03C7D - 3489e52e1fea1f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[signDemoTests testJavaEncoding]"
+                  moduleName = "signDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Library/Mobile%20Documents/com~apple~CloudDocs/signDemo/signDemoTests/signDemoTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  uuid = "FC73A9C0-720C-449D-BC4A-C9F83DA03C7D - 3489e52e1fea1f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[signDemoTests testJavaEncoding]"
+                  moduleName = "signDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Library/Mobile%20Documents/com~apple~CloudDocs/signDemo/signDemoTests/signDemoTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "663">
+               </Location>
+               <Location
+                  uuid = "FC73A9C0-720C-449D-BC4A-C9F83DA03C7D - 3489e52e1fea1f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[signDemoTests testJavaEncoding]"
+                  moduleName = "signDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Library/Mobile%20Documents/com~apple~CloudDocs/signDemo/signDemoTests/signDemoTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "767">
+               </Location>
+               <Location
+                  uuid = "FC73A9C0-720C-449D-BC4A-C9F83DA03C7D - 3489e52e1fea1f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[signDemoTests testJavaEncoding]"
+                  moduleName = "signDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Library/Mobile%20Documents/com~apple~CloudDocs/signDemo/signDemoTests/signDemoTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "860">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC52FC58-E7B8-4D94-B36A-EB0CCC0B27B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "signDemoTests/signDemoTests.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-testJavaEncoding"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EC52FC58-E7B8-4D94-B36A-EB0CCC0B27B5 - 3489e52e1fea1f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[signDemoTests testJavaEncoding]"
+                  moduleName = "signDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Library/Mobile%20Documents/com~apple~CloudDocs/signDemo/signDemoTests/signDemoTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "87">
+               </Location>
+               <Location
+                  uuid = "EC52FC58-E7B8-4D94-B36A-EB0CCC0B27B5 - 3489e52e1fea1f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[signDemoTests testJavaEncoding]"
+                  moduleName = "signDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Library/Mobile%20Documents/com~apple~CloudDocs/signDemo/signDemoTests/signDemoTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "626">
+               </Location>
+               <Location
+                  uuid = "EC52FC58-E7B8-4D94-B36A-EB0CCC0B27B5 - 3489e52e1fea1f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[signDemoTests testJavaEncoding]"
+                  moduleName = "signDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Library/Mobile%20Documents/com~apple~CloudDocs/signDemo/signDemoTests/signDemoTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1142">
+               </Location>
+               <Location
+                  uuid = "EC52FC58-E7B8-4D94-B36A-EB0CCC0B27B5 - 3489e52e1fea1f69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[signDemoTests testJavaEncoding]"
+                  moduleName = "signDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Library/Mobile%20Documents/com~apple~CloudDocs/signDemo/signDemoTests/signDemoTests.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1235">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82FD4173-F15C-41EB-AE68-CC1DB03B2F7C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "signDemoTests/signDemoTests.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "-testURLComponent"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
