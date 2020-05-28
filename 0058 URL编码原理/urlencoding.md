@@ -56,7 +56,7 @@ URL 编码默认用的字符集是 US-ASCII，`a` 在 US-ASCII 码中对应字�
 
 比如一个 URL `http://www.baidu.com/ac-common/common/getCurTimeStamp?key1=val&ue1&key2=value2`
 
-这里 `key1=val&ue1` 中就出现了保留字 `&`，解析的时候就分不清楚是 `&` 是用来做分隔还是值的一部分。
+这里 `key1=val&ue1` 中就出现了保留字 `&`，解析的时候就分不清楚 `&` 是用来做分隔还是值的一部分。
 
 所以编码的时候要对 URL 各个 component 分别编码：
 
@@ -64,7 +64,7 @@ URL 编码默认用的字符集是 US-ASCII，`a` 在 US-ASCII 码中对应字�
  NSString *cv = [@"val&ue" stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@""]];
 // val&ue = %76%61%6C%26%75%65
 
-// 放入完整 URL 中，再次编码后 "%" 会被编码到 %25
+// 放入完整 URL 中，因为 % 也是保留字, 再次编码后 "%" 会被编码到 %25
 NSString *d = [NSString stringWithFormat:@"http://www.baidu.com/ac-common/common/getCurTimeStamp?key1=%@&key2=value", cv];
 d = [d stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 // val&ue = %2576 %2561 %256C %2526 %2575 %2565    
