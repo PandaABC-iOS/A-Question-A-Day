@@ -136,7 +136,10 @@ result = [result stringByReplacingOccurrencesOfString:@"%20" withString:@"+"];
 ```
 
 
+# Demo
+demo 上有 iOS 的编码单元测试示例。
 
+根目录下还有一个 Main.java 是 java 的编码示例。
 
 
 
