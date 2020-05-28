@@ -94,7 +94,7 @@ URLUserAllowedCharacterSet
 
 系统提供的编码字符集不一定能满足我们的需求，这时候需要自定义字符集。
 
-比如接口签名应用，JAVA 的 `URLEncoder.encode( url, "UTF-8" )` 方法允许的编码字符集不符合上述字符集的情况，根据 JAVA 的文档：
+比如接口签名应用，需要符合 x-www-form-urlencoded 格式，同 JAVA 的 `URLEncoder.encode( url, "UTF-8" )` 方法，根据 JAVA 的文档：
 
 ```
 public class URLEncoder

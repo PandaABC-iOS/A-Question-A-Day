@@ -74,6 +74,7 @@
     XCTAssert([[self _encoding:alphaNumeric] isEqualToString:alphaNumeric]);
     XCTAssert([[self _encoding:reversedChars] isEqualToString:reversedChars]);
     XCTAssert([[self _encoding:space] isEqualToString:@"+"]);
+    XCTAssert([[self _encoding:@"a b"] isEqualToString:@"a+b"]);
     XCTAssert([[self _encoding:chinese] isEqualToString:@"%E4%B8%AD%E6%96%87"]);
 }
 
@@ -88,13 +89,13 @@
 - (NSString *)_encoding:(NSString *)str {
     NSMutableCharacterSet *charset = [[NSMutableCharacterSet alloc] init];
     [charset addCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"];
-    [charset addCharactersInString:@".-*_"];
+    [charset addCharactersInString:@".-*_ "];
+
 
     NSString *encoded = [str stringByAddingPercentEncodingWithAllowedCharacters:charset];
-    
-    NSString *spaceReplaced = [encoded stringByReplacingOccurrencesOfString:@"%20" withString:@"+"];
-    NSLog(@"%@", spaceReplaced);
-    return spaceReplaced;
+    encoded = [encoded stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+    NSLog(@"%@", encoded);
+    return encoded;
 }
 
 - (void)_displayCharset:(NSCharacterSet *)charset {
