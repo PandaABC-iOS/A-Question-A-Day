@@ -1,7 +1,7 @@
-对一个 NSNumber 的格式化输出，可以用 `StringValue` 方法，也可以用 `NSNumberFormatter`。
+对一个 NSNumber 的格式化输出，可以用 `stringValue` 方法，也可以用 `NSNumberFormatter`。
 但是如果要精确控制输出的格式，就需要自己写一个格式化方法了。
 
-这里也是对 JSON 格式化 `NSNumber` 的一次调查，通过 [JSONKit](https://github.com/johnezang/JSONKit/blob/82157634ca0ca5b6a4a67a194dd11f15d9b72835/JSONKit.m#L2725) 这个第三方 JSON 序列化库的源码的查看，来猜测 `NSJSONSerialization` 的格式化行为。
+这里也是对 JSON 格式化 `NSNumber` 的一次调查，通过阅读 [JSONKit](https://github.com/johnezang/JSONKit/blob/82157634ca0ca5b6a4a67a194dd11f15d9b72835/JSONKit.m#L2725) 这个第三方 JSON 序列化库的源码对 `NSNumber` 的处理，来猜测 `NSJSONSerialization` 的格式化行为。
 
 
 # NSNumber
@@ -27,10 +27,10 @@ NSNumber 有一个 objCType 方法，可以看到具体编码的类型。
 # 整型
 
 ```objc
-// 保存整型数字的字符串
+// 保存整型数字的字符数组
 char anum[256], *aptr = &anum[255];
-// 8 字节
- unsigned long long ullv;
+// 8 字节大小
+unsigned long long ullv;
 
 if (ullv < 10ULL) {
   // '0' 的 ascii 值是 48，相加是为了把数字变成 ascii 码值
@@ -62,7 +62,11 @@ if (CFNumberGetValue((CFNumberRef)number, kCFNumberDoubleType, &dv)) {
 	}
 
 	char buffer[255];
-	// 小数点后舍入到 17 位，g 的意思是去掉尾部的空格
+	// 小数点后舍入到 17 位
+  // 
+  // g 的意思是去掉尾部的空格
+  // 会用 e 的格式来表示，如果指数小于 -4 或大于等于精度
+  // 小数点后至少有一位数字，才会显示小数点 "."
 	sprintf(buffer, "%.17g", dv);
 	
 	return [NSString stringWithUTF8String:buffer];
