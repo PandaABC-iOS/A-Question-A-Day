@@ -46,7 +46,7 @@ self.person1.isa == NSKVONotifying_Person
 self.person2.isa == Person
 ```
 
-结论: 通过打印我们发现self.person1实例对象的isa 指针 指向的 NSKVONotifying_Person 类对象， 而self.person2实例对象的isa 指针 指向的是 Person 类对象 而 setAge 对象方法是存放在 Person 类对象里面 这就是 为什么[self.person1 setAge:10] 这句代码并没有调到 Person 的 setAge 的原因   而NSKVONotifying_Person 的 setAge 方法 低层是 实现了 _NSSetIntValueAndNotify 这个方法 
+结论: 通过打印我们发现self.person1实例对象的isa 指针 指向的 NSKVONotifying_Person 类对象， 而self.person2实例对象的isa 指针 指向的是 Person 类对象 而 setAge 对象方法是存放在 Person 类对象里面 这就是 为什么[self.person1 setAge:10] 这句代码并没有调到 Person 的 setAge 的原因   而NSKVONotifying_Person 的 setAge 方法 底层是 实现了 _NSSetIntValueAndNotify 这个方法 
 
 我们可以实现一下如下伪代码： 
 
