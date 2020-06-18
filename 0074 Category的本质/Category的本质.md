@@ -114,13 +114,13 @@ xcrun -sdk iphoneos clang -arch arm64 -rewrite-objc Preson+Test.m
 
 在分类转化为c++文件中可以看出_category_t结构体中，存放着类名，对象方法列表，类方法列表，协议列表，以及属性列表。
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-78990f54c5edb32e.png?imageMogr2/auto-orient/strip|imageView2/2/w/820)
+![img](./p1.png)
 
 c++文件中category_t结构体
 
 紧接着，我们可以看到_method_list_t类型的结构体，如下图所示
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-7fecec0e35cbfe3e.png?imageMogr2/auto-orient/strip|imageView2/2/w/1179)
+![img](./p2.png)
 
 对象方法列表结构体
 
@@ -128,7 +128,7 @@ c++文件中category_t结构体
 
 接下来我们发现同样的_method_list_t类型的类方法结构体，如下图所示
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-e81b6858a16dc4cb.png?imageMogr2/auto-orient/strip|imageView2/2/w/1135)
+![img](./p3.png)
 
 类对象方法列表
 
@@ -136,7 +136,7 @@ c++文件中category_t结构体
 
 接下来是协议方法列表
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-19ef40f48eeebfd3.png?imageMogr2/auto-orient/strip|imageView2/2/w/1189)
+![img](./p4.png)
 
 协议方法列表
 
@@ -144,7 +144,7 @@ c++文件中category_t结构体
 
 最后我们可以看到属性列表
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-e5878cf5fc015c7c.png?imageMogr2/auto-orient/strip|imageView2/2/w/962)
+![img](./p5.png)
 
 属性列表结构体
 
@@ -153,13 +153,9 @@ c++文件中category_t结构体
 
 最后我们可以看到定义了**`_OBJC_$_CATEGORY_Preson_$_Test`**结构体，并且将我们上面着重分析的结构体一一赋值，我们通过两张图片对照一下。
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-ed3e04186e33e0d2.png?imageMogr2/auto-orient/strip|imageView2/2/w/689)
+![img](./p6.png)
 
-_category_t
-
-
-
-![img](https:////upload-images.jianshu.io/upload_images/1434508-a2dffad1c81f5d72.png?imageMogr2/auto-orient/strip|imageView2/2/w/1194)
+![img](./p7.png)
 
 _OBJC_$_CATEGORY_Preson_$_Test
 
@@ -171,19 +167,19 @@ _OBJC_$_CATEGORY_Preson_$_Test
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-0b43b0c4f1a2f9e1.png?imageMogr2/auto-orient/strip|imageView2/2/w/812)
+![img](./p8.png)
 
 runtime初始化函数
 
 接着我们来到 &map_images读取模块（images这里代表模块），来到map_images_nolock函数中找到_read_images函数，在_read_images函数中我们找到分类相关代码
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-89ef8494e5741ac2.png?imageMogr2/auto-orient/strip|imageView2/2/w/866)
+![img](./p9.png)
 
 Discover categories代码
 
 从上述代码中我们可以知道这段代码是用来查找有没有分类的。通过_getObjc2CategoryList函数获取到分类列表之后，进行遍历，获取其中的方法，协议，属性等。可以看到最终都调用了remethodizeClass(cls);函数。我们来到remethodizeClass(cls);函数内部查看。
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-81023f6e55b830af.png?imageMogr2/auto-orient/strip|imageView2/2/w/852)
+![img](./p10.png)
 
 remethodizeClass函数内部
 
@@ -193,7 +189,7 @@ remethodizeClass函数内部
 
 我们来到attachCategories函数内部。
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-0c16f9a121a704c3.png?imageMogr2/auto-orient/strip|imageView2/2/w/942)
+![img](./p11.png)
 
 attachCategories函数内部实现
 
@@ -203,7 +199,7 @@ attachCategories函数内部实现
 
 我们来看一下attachLists函数内部。
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-5b7b751278a9de70.png?imageMogr2/auto-orient/strip|imageView2/2/w/1009)
+![img](./p12.png)
 
 attachLists函数内部实现
 
@@ -237,7 +233,7 @@ void    *memcpy(void *__dst, const void *__src, size_t __n);
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-de4cc8308b362d72.png?imageMogr2/auto-orient/strip|imageView2/2/w/743)
+![img](./p13.png)
 
 未经过内存移动和拷贝时
 
@@ -253,7 +249,7 @@ memmove(array()->lists + addedCount, array()->lists,
                   oldCount * sizeof(array()->lists[0]));
 ```
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-d57c524988754a9c.png?imageMogr2/auto-orient/strip|imageView2/2/w/917)
+![img](./p14.png)
 
 memmove方法之后内存变化
 
@@ -271,7 +267,7 @@ memcpy(array()->lists, addedLists,
                addedCount * sizeof(array()->lists[0]));
 ```
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-2f70771f3deffad7.png?imageMogr2/auto-orient/strip|imageView2/2/w/916)
+![img](./p15.png)
 
 memmove方法之后，内存变化
 
@@ -279,8 +275,6 @@ memmove方法之后，内存变化
 
 那么为什么要将分类方法的列表追加到本来的对象方法前面呢，这样做的目的是为了保证分类方法优先调用，我们知道当分类重写本类的方法时，会覆盖本类的方法。
 其实经过上面的分析我们知道本质上并不是覆盖，而是优先调用。本类的方法依然在内存中的。我们可以通过打印所有类的所有方法名来查看
-
-
 
 ```objectivec
 - (void)printMethodNamesOfClass:(Class)cls
@@ -313,8 +307,7 @@ memmove方法之后，内存变化
 }
 ```
 
-通过下图中打印内容可以发现，调用的是Test2中的run方法，并且Person类中存储着两个run方法。
+通过打印内容可以发现，调用的是Test2中的run方法，并且Person类中存储着两个run方法。
 
-![img](https:////upload-images.jianshu.io/upload_images/1434508-e918e62841729d82.png?imageMogr2/auto-orient/strip|imageView2/2/w/919)
 
-打印所有方法
+
