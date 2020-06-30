@@ -1,0 +1,20 @@
+PODS:
+  - HandyJSON (5.0.1)
+  - Tiercel (2.3.0)
+
+DEPENDENCIES:
+  - HandyJSON
+  - Tiercel (= 2.3.0)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - HandyJSON
+    - Tiercel
+
+SPEC CHECKSUMS:
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  Tiercel: 87c75f90ec3152ee2a278591b41f606b383af2af
+
+PODFILE CHECKSUM: 5305ca2eb0ada1b4400db7555e46daccd0a80306
+
+COCOAPODS: 1.8.4

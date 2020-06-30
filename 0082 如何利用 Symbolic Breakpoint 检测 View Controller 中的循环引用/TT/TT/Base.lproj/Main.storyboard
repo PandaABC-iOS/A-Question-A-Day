@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rVD-73-dNJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTK-5h-8WB">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="fjj-eW-49T" kind="show" id="tiY-Io-LgO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CTK-5h-8WB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="G13-XU-6ud"/>
+                            <constraint firstItem="CTK-5h-8WB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8T-32-hkr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="luW-jr-0TV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tQb-HR-lfs">
+            <objects>
+                <viewController id="fjj-eW-49T" customClass="ViewController" customModule="TT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFb-sr-Mwk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CG-d3-EIY">
+                                <rect key="frame" x="67" y="308" width="280" height="280"/>
+                                <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="XGu-ge-P6r"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heQ-yU-050">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="XwF-Oi-3Wn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85e-rn-L5Q">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="i1e-G3-9HA"/>
+                                    <constraint firstAttribute="width" secondItem="85e-rn-L5Q" secondAttribute="height" multiplier="1:1" id="ksM-YV-7ru"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test2" translatesAutoresizingMaskIntoConstraints="NO" id="nze-Uf-C1D">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EfR-dg-bHz"/>
+                                    <constraint firstAttribute="width" secondItem="nze-Uf-C1D" secondAttribute="height" multiplier="1:1" id="Iif-de-CW9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="heQ-yU-050" firstAttribute="width" secondItem="heQ-yU-050" secondAttribute="height" multiplier="1:1" id="BFC-Dw-ZK3"/>
+                            <constraint firstItem="85e-rn-L5Q" firstAttribute="centerX" secondItem="OFb-sr-Mwk" secondAttribute="centerX" id="CAK-OJ-bNv"/>
+                            <constraint firstItem="nze-Uf-C1D" firstAttribute="centerY" secondItem="OFb-sr-Mwk" secondAttribute="centerY" id="G1J-G8-XQN"/>
+                            <constraint firstItem="heQ-yU-050" firstAttribute="centerX" secondItem="OFb-sr-Mwk" secondAttribute="centerX" id="HJE-N6-9Zs"/>
+                            <constraint firstItem="heQ-yU-050" firstAttribute="centerY" secondItem="OFb-sr-Mwk" secondAttribute="centerY" id="QGW-Ix-7sq"/>
+                            <constraint firstItem="nze-Uf-C1D" firstAttribute="centerX" secondItem="OFb-sr-Mwk" secondAttribute="centerX" id="QQA-SW-RZ7"/>
+                            <constraint firstItem="85e-rn-L5Q" firstAttribute="centerY" secondItem="OFb-sr-Mwk" secondAttribute="centerY" id="aHR-Wf-chn"/>
+                            <constraint firstItem="1CG-d3-EIY" firstAttribute="centerY" secondItem="OFb-sr-Mwk" secondAttribute="centerY" id="bkB-na-XUD"/>
+                            <constraint firstItem="1CG-d3-EIY" firstAttribute="width" secondItem="1CG-d3-EIY" secondAttribute="height" multiplier="1:1" id="lVG-0P-SYp"/>
+                            <constraint firstItem="1CG-d3-EIY" firstAttribute="centerX" secondItem="OFb-sr-Mwk" secondAttribute="centerX" id="szx-I7-cyu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="33H-HG-jeD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e6J-i3-Veo"/>
+                    <connections>
+                        <outlet property="imageView" destination="nze-Uf-C1D" id="j9I-vr-HHZ"/>
+                        <outlet property="testView" destination="85e-rn-L5Q" id="dCL-Ub-M0m"/>
+                        <outlet property="testView2" destination="heQ-yU-050" id="SkN-M5-Eej"/>
+                        <outlet property="testView3" destination="1CG-d3-EIY" id="TXL-mv-0Qu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRn-nR-ODB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yMI-ch-Mh2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rVD-73-dNJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TtZ-Vs-WoR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6ws-Ut-hs1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGi-dz-HGs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test2" width="829" height="519"/>
+    </resources>
+</document>

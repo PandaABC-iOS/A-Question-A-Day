@@ -1,0 +1,6 @@
+framework module Tiercel {
+  umbrella header "Tiercel-umbrella.h"
+
+  export *
+  module * { export * }
+}
