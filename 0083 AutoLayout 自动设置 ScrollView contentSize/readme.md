@@ -5,13 +5,16 @@
 ## 设置 contentSize
 
 1. 固定尺寸
+
 这个情况比较少见
 
 2. 根据内容计算 contentSize
+
 如果每一个界面元素对应的高度是固定的，或者可以方便的只根据 model 属性计算出来。
 
 3. 根据最后一个 subView 的 frame 计算 contentSize
-一般最后一个 subView 处于最后面的的位置，在 `layoutSubView` 取它的 frame.maxY 就行。
+
+一般最后一个 subView 处于最后面的的位置，在 `layoutSubview` 取它的 frame.maxY 就行。
 
 ## 用 Autolayout 设置 contentSize
 
