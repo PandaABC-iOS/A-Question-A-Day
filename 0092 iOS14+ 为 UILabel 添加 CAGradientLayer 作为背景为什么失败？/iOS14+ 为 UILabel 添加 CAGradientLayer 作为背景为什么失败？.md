@@ -2,7 +2,7 @@
 
 UILabel 添加 CAGradientLayer 处理流程图 
 
-![img](https://user-gold-cdn.xitu.io/2020/7/10/17334e64596acf6d?imageView2/0/w/1280/h/960/format/png/ignore-error/1)
+![img](https://user-gold-cdn.xitu.io/2020/7/10/17334e64596acf6d?imageView2/0/w/1280/h/960/format/png)
 
 
 
@@ -10,7 +10,7 @@ UILabel 添加 CAGradientLayer 处理流程图
 
 
 
-![img](https://user-gold-cdn.xitu.io/2020/7/10/17334e5a853b5649?imageView2/0/w/1280/h/960/format/png/ignore-error/1)
+![img](https://user-gold-cdn.xitu.io/2020/7/10/17334e5a853b5649?imageView2/0/w/1280/h/960/format/png)
 
 
 
@@ -18,7 +18,7 @@ UILabel 添加 CAGradientLayer 处理流程图
 
 
 
-![img](https://user-gold-cdn.xitu.io/2020/7/8/1732f0c93b5dd300?imageView2/0/w/1280/h/960/format/png/ignore-error/1)
+![img](https://user-gold-cdn.xitu.io/2020/7/8/1732f0c93b5dd300?imageView2/0/w/1280/h/960/format/png)
 
 
 
