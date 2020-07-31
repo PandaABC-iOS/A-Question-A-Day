@@ -34,6 +34,7 @@ _date = Date()
 
 if let pastYear = self.calendar.dateComponents(in: self.timezone, from: Date.distantPast).year,
 	let futureYear = self.calendar.dateComponents(in: self.timezone, from: Date.distantFuture).year {
+	/// 4000 年
 	self.yearRange = Array(pastYear...futureYear)
 } else {
 	self.yearRange = []
