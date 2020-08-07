@@ -76,11 +76,13 @@ class SortMapTests: XCTestCase {
         print(bst)
     }
     
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    func testRedBlackTreeInsert() throws {
+         var set = RedBlackTree<Int>.empty
+         
+         for i in (1 ... 10).shuffled() {
+             set.insert(i)
+         }
+         
+         print(set)
+     }
 }

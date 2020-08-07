@@ -203,5 +203,33 @@ extension RedBlackTree {
 }
 ```
 
+测试
+
+```swift
+func testRedBlackTreeInsert() throws {
+    var set = RedBlackTree<Int>.empty
+
+    for i in (1 ... 10).shuffled() {
+        set.insert(i)
+    }
+
+    print(set)
+}
+    
+        ┌───•
+    ┌───■ 10
+    │   └───□ 9
+┌───■ 8
+│   │   ┌───•
+│   └───■ 7
+│       └───□ 6
+■ 5
+│       ┌───□ 4
+│   ┌───■ 3
+│   │   └───•
+└───■ 2
+    └───■ 1
+```
+
 # 参考
 - [集合类型优化](https://objccn.io/products/optimizing-collections/)
