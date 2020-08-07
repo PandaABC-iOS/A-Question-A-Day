@@ -215,7 +215,9 @@ func testRedBlackTreeInsert() throws {
 
     print(set)
 }
-    
+```
+
+```
         ┌───•
     ┌───■ 10
     │   └───□ 9
