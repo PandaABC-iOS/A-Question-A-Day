@@ -111,6 +111,8 @@ func testBST() throws {
 
 所以说平衡是非常关键的，O(log n) 于 O(n) 的复杂度相比差距很大。
 
+![measure](./measure.jpeg)
+
 ### 红黑树
 
 红黑树是平衡树的一种，也是二叉搜索树。
