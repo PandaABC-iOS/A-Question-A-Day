@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DC4E4ABB-5A5D-431E-AA6A-C64A80C95DDA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B86EBC76-9F6D-46EA-BFBC-7D8560999DD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomOperation/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "testAnimationOperation()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B86EBC76-9F6D-46EA-BFBC-7D8560999DD8 - c9703dcbabcdda08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((Swift.Result&lt;Swift.Optional&lt;Any&gt;, Swift.Error&gt;) -&gt; ()) -&gt; () in CustomOperation.ViewController.testAnimationOperation() -&gt; ()"
+                  moduleName = "CustomOperation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Developer/CustomOperation/CustomOperation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  uuid = "B86EBC76-9F6D-46EA-BFBC-7D8560999DD8 - 893847d7705c62bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #1 ((Swift.Result&lt;Swift.Optional&lt;Any&gt;, Swift.Error&gt;) -&gt; ()) -&gt; () in CustomOperation.ViewController.testAnimationOperation() -&gt; ()"
+                  moduleName = "CustomOperation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/songzhou/Developer/CustomOperation/CustomOperation/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
