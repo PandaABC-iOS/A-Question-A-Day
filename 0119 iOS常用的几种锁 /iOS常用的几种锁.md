@@ -13,7 +13,7 @@
 
 下图是它们的性能对比：
 
-![img](https:////upload-images.jianshu.io/upload_images/2208956-4a024a1c6c6214db.png?imageMogr2/auto-orient/strip|imageView2/2/w/1060/format/webp)
+![img](https://upload-images.jianshu.io/upload_images/2208956-4a024a1c6c6214db.png?imageMogr2/auto-orient/strip|imageView2/2/w/1060/format/webp)
 
 性能表 图1.1
 
