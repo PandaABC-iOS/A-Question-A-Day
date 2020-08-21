@@ -67,7 +67,7 @@
 }
 ```
 
-![img](https:////upload-images.jianshu.io/upload_images/2208956-81a19f5eb4d61119.png?imageMogr2/auto-orient/strip|imageView2/2/w/629/format/webp)
+![img](https://upload-images.jianshu.io/upload_images/2208956-81a19f5eb4d61119.png?imageMogr2/auto-orient/strip|imageView2/2/w/629/format/webp)
 
 控制台打印
 
@@ -121,7 +121,7 @@ NSLock类还增加了`tryLock`和`lockBeforeDate:`方法。
 }
 ```
 
-![img](https:////upload-images.jianshu.io/upload_images/2208956-576e24b974a2a4f2.png?imageMogr2/auto-orient/strip|imageView2/2/w/628/format/webp)
+![img](https://upload-images.jianshu.io/upload_images/2208956-576e24b974a2a4f2.png?imageMogr2/auto-orient/strip|imageView2/2/w/628/format/webp)
 
 控制台打印
 
@@ -214,7 +214,7 @@ NSLock类还增加了`tryLock`和`lockBeforeDate:`方法。
     });
 ```
 
-![img](https:////upload-images.jianshu.io/upload_images/2208956-3737813c40d45c9f.png?imageMogr2/auto-orient/strip|imageView2/2/w/347/format/webp)
+![img](https://upload-images.jianshu.io/upload_images/2208956-3737813c40d45c9f.png?imageMogr2/auto-orient/strip|imageView2/2/w/347/format/webp)
 
 控制台打印
 
@@ -316,5 +316,5 @@ OSSpinLock 在图1.1 中显示的效率最高（暂不建议使用，原因参�
 }
 ```
 
-![img](https:////upload-images.jianshu.io/upload_images/2208956-3aa6d6c749e2d896.png?imageMogr2/auto-orient/strip|imageView2/2/w/667/format/webp)iOS 中常用的几种锁
+![img](https://upload-images.jianshu.io/upload_images/2208956-3aa6d6c749e2d896.png?imageMogr2/auto-orient/strip|imageView2/2/w/667/format/webp)iOS 中常用的几种锁
 
