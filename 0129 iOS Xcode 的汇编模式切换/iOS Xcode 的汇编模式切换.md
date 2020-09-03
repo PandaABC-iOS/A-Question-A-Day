@@ -54,10 +54,6 @@
 
 ![img](https://upload-images.jianshu.io/upload_images/6083675-09b0f32c20922db4?imageMogr2/auto-orient/strip|imageView2/2/w/1043)
 
-> **图5:**
-
-![img](https://upload-images.jianshu.io/upload_images/6083675-8bb767cdf95bec25?imageMogr2/auto-orient/strip|imageView2/2/w/1110)
-
 > **注意一点的是: 因为内存地址是从低位按字节依次排列而来，所以对于比如int类型的值的读取我们就要从高位到低位开始读取。**
 
 # 
