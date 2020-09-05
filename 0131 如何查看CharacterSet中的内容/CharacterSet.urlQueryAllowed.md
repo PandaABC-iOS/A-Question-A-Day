@@ -1,6 +1,6 @@
 在翻看Alamofire的源码的过程中，一直很好奇CharacterSet.urlQueryAllowed都包含哪些字符，用常规的po打印的结果是
 
-![Screen Shot 2020-09-05 at 1.39.25 PM](https://tva1.sinaimg.cn/large/007S8ZIlly1gifq55qu1pj30vm03o0tz.jpg)
+![Screen Shot 2020-09-05 at 2.11.14 PM](https://tva1.sinaimg.cn/large/007S8ZIlgy1gifqv89onvj30fu01rq35.jpg)
 
 知识的真相驱使着我前行，最终功夫不负有心人，代码如下。
 
