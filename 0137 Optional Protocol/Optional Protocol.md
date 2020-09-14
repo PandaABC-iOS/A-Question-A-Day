@@ -159,7 +159,7 @@ extension SubClass {
 
 编译器报错 `Non-'@objc' method 'test2()' does not satisfy requirement of '@objc' protocol 'TestType'` 
 
-如果父类实现 test2 方法，报错消失，这样就失去可选协议的作业了
+如果父类实现 test2 方法，报错消失，这样就失去可选协议的作用了
 
 ## 3. @objc protocol + @objc optional func
 
