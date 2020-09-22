@@ -84,7 +84,7 @@ count 初始值是 50
 
 `interrupt` 后会发生线程切换，由操作系统调度，会保存一个线程的状态，恢复另一个线程的状态。
 
-1. thread1 执行下面指令后，会读取 counter 的值，保存到 eax 中并加1。
+1. thread1 执行下面指令后，会读取 count 的值，保存到 %eax 中并加1。
 ```asm
 mov 0x8049a1c, %eax 
 add $0x1, %eax
@@ -140,7 +140,7 @@ void unlock(lock_t *lock) {
 }
 ```
 
-`lock` 函数，内建一个 while 循环，判断 lock 是否被持有(lock->flag == 0)，如果没有持有，直接跳出循环并设置 lock->flag = 1，否则一直循环判断。
+`lock` 函数，内建一个 while 循环，判断 lock 是否被持有，如果没有持有，直接跳出循环并设置为持有 lock->flag = 1，否则一直循环判断。
 
 这里的判断并设置值的操作也会有多线程访问的问题，但 `OSAtomicCompareAndSwap64()` 能保证这里的操作是原子性的，意味着在 CPU 层面能够保证这些指令被一次性执行完，不会被系统中断干扰。
 
