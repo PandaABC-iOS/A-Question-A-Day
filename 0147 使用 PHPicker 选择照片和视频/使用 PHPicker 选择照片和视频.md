@@ -203,7 +203,7 @@ loadFileRepresentation 的使用方式与 UIImage 类似，但需要额外传入
 
 与照片不同的是，这个 api 返回的是一个 URL 类型的临时文件路径，苹果在这个 API 的说明中指出：系统会把请求的文件数据复制到这个路径对应的地址，并且在回调执行完毕后删除临时文件。
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/3QD99b9DjVEMOBNT4xHq9aY8rU0Y5sSzWDO7ic9NsQZ65DCVf1arUADzAMnpb11FD7Z7AzZOuKpZ8CJH4lh1qIg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](https://tva1.sinaimg.cn/large/007S8ZIlly1gj5c5mbkzaj30r40bon8r.jpg)
 
 > 如果你需要在异步线程中对这个文件进行处理，那么需要再复制一次，将文件放到不会被系统自动删除的路径下，并且在处理完毕后自行删除。
 
